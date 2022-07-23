@@ -29,7 +29,7 @@ game.StarterGui:SetCore("SendNotification",  {
 })
     
     
-    local PP = Window:NewTab("Player")
+local PP = Window:NewTab("Player")
 
 local TP = Window:NewTab("Teleports")
 local WO = Window:NewTab("World")
