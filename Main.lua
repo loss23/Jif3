@@ -1617,14 +1617,6 @@ end)
 cre:NewButton("Copy x0x#4663 (Owner)", "Copies the owners discord tag", function()
 setclipboard("x0x#4663")
 end)
-
-
-
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()  -- inf
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua", true))() -- ESP
-
-
-
    
    
     local acc = {"qwdqwdqwdqwdqasd","X0XTYTYTYTYTYTX0X","jackzanderYT","gottabigcarnamed"}
