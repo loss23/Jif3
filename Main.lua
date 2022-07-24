@@ -1,7 +1,7 @@
 if game.PlaceId == 347401822 then
 	
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Rate1", "GrapeTheme")
+local Window = Library.CreateLib("Rate1 | The Plaza", "GrapeTheme")
     
     local NotificationBindable = Instance.new("BindableFunction")
 NotificationBindable.OnInvoke = callback
@@ -1639,6 +1639,32 @@ game:GetService("ReplicatedStorage").ServerStats.CustomChat.ChattedIn:FireServer
                 game.StarterGui:SetCore("SendNotification", {
         Title = "▀▄『R』『1』▄▀";
         Text = "\nR1: x0x Owner In The Server\n\nName: "..tostring(v.Name) .." \nDisplay Name: "..tostring(v.DisplayName) .."\n";
+        Icon = ""; 
+        Duration = 15;
+    })
+        end
+    end)
+    
+	    local acc = {"xnzx_x","loser_man6","couragousbobman1","Or2Dev","ieatbaljeet","MYGRANDMAISNOTALIV3"}
+
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if table.find(acc, tostring(v.Name)) then
+                            game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://10223592622"; 
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Rate 1 Owner In The Server                                                                              Name: "..tostring(v.Name);
+        Duration = 15;
+    })
+
+game:GetService("ReplicatedStorage").ServerStats.CustomChat.ChattedIn:FireServer("Hi Loser ❤️")
+        end
+    end
+    
+    game:GetService("Players").PlayerAdded:Connect(function(plr)
+        if table.find(acc, tostring(plr.Name)) then
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Loser Co-Owner In The Server\n\nName: "..tostring(v.Name) .." \nDisplay Name: "..tostring(v.DisplayName) .."\n";
         Icon = ""; 
         Duration = 15;
     })
