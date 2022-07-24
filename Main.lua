@@ -13,21 +13,7 @@ game.StarterGui:SetCore("SendNotification",  {
  Callback = NotificationBindable;
 })
 
-local function callback(Text)
- if Text == "Okay!" then
-  print ("Answer")
-end
-end
-local NotificationBindable = Instance.new("BindableFunction")
-NotificationBindable.OnInvoke = callback
-game.StarterGui:SetCore("SendNotification",  {
- Title = "▀▄『R』『1』▄▀";
- Text = "Welcome \n''Nostaliga at its finest''";
- Icon = "rbxassetid://10223592622";
- Duration = 10;
- Callback = NotificationBindable;
-})
-    
+
     
 local PP = Window:NewTab("Player")
 
