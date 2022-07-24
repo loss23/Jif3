@@ -55,6 +55,7 @@ local cre = CS:NewSection("Credit")
 
 
 player:NewButton("Infinite money", "Fucking idiot really doesn't know what that means", function()
+game.ReplicatedStorage.ServerStats.ChangeMoney:FireServer(amount, math.floor(math.sqrt(game.ReplicatedStorage.ServerStats.CurrentID.Value)) + 1337)
 local amount = 690e8
 
 local function callback(Text)
