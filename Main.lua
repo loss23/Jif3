@@ -1,7 +1,7 @@
 if game.PlaceId == 347401822 then
 	
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Rate1 | The Plaza", "GrapeTheme")
+local Window = Library.CreateLib("Rate1 | The Plaza", _G.Theme)
     
     local NotificationBindable = Instance.new("BindableFunction")
 NotificationBindable.OnInvoke = callback
