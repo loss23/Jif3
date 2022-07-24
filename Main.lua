@@ -29,7 +29,11 @@ local PP = Window:NewTab("Player")
 local TP = Window:NewTab("Teleports")
 local WO = Window:NewTab("World")
 local SO = Window:NewTab("Shop")
-local SP = Window:NewTab("Special")
+
+if game:GetService("MarketPlaceService"):UserOwnsAssetAsync(game.Players.LocalPlayer.UserId,10335160700) then
+	local SP = Window:NewTab("Special")		
+end
+	
 local CS = Window:NewTab("Credits/Settings")
 
 
