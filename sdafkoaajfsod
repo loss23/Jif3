@@ -1,7 +1,7 @@
 if game.PlaceId == 1499872953 then
 	
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Rate1 | Boku No Roblox", "GrapeTheme")
+local Window = Library.CreateLib("Rate1 | The Plaza", _G.Theme)
 
 local PP = Window:NewTab("Quirk")
 
