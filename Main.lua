@@ -3,7 +3,7 @@ if game.PlaceId == 347401822 then
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Rate1 | The Plaza", _G.Settings.Theme)
     
-    local NotificationBindable = Instance.new("BindableFunction")
+local NotificationBindable = Instance.new("BindableFunction")
 NotificationBindable.OnInvoke = callback
 game.StarterGui:SetCore("SendNotification",  {
  Title = "▀▄『R』『1』▄▀";
@@ -13,6 +13,15 @@ game.StarterGui:SetCore("SendNotification",  {
  Callback = NotificationBindable;
 })
 
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "▀▄『R』『1』▄▀";
+ Text = "Theme Selected: ".._G.Settings.Theme;
+ Icon = "rbxassetid://10223592622";
+ Duration = 10;
+ Callback = NotificationBindable;
+})
 
     
 local PP = Window:NewTab("Player")
