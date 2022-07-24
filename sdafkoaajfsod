@@ -1,0 +1,35 @@
+if game.PlaceId == 1499872953 then
+	
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Rate1 | Boku No Roblox", "GrapeTheme")
+
+local PP = Window:NewTab("Quirk")
+
+local Quirk = PP:NewSection("Quirk Farming")
+
+local Selected_Quirk = nil
+
+getgenv().Toggled = false
+
+
+Quirk:NewDropdown("Select Quirk","Cool",{"30", "2"}, function(s)
+    Selected_Quirk = s
+end)
+
+Quirk:NewToggle("Farm For Quirk","You need money dumbass",function(f)
+    if getgenv().Toggled == false then
+       getgenv().Toggled = true 
+    else
+       getgenv().Toggled = false 
+    end
+    while getgenv().Toggled == true do
+        if workspace.S1c2R5i66p5t5s51.PlayerData[game.Players.LocalPlayer.Name].Cash.Value > 5000 and workspace.S1c2R5i66p5t5s51.PlayerData[game.Players.LocalPlayer.Name].Quirk.Value ~= Selected_Quirk  then
+            local A_1 = "Commons"
+            local Event = game:GetService("Workspace").S1c2R5i66p5t5s51.Spin.Spinner
+            Event:InvokeServer(A_1)
+        end
+        wait(.1)
+    end
+end)
+    
+end
