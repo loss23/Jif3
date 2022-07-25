@@ -1,8 +1,3 @@
-_G.Settings = {
-    DiscordAutoJoin = false,
-    Theme = "Ocean"
-}
-
 if game.PlaceId == 347401822 then
 	
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
