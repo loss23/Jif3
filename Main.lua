@@ -30,7 +30,7 @@ local TP = Window:NewTab("Teleports")
 local WO = Window:NewTab("World")
 local SO = Window:NewTab("Shop")
 
-if game:GetService("MarketplaceService"):PlayerOwnsAsset(game.Players.LocalPlayer.UserId,10335160700) then
+if game:GetService("MarketplaceService"):PlayerOwnsAsset(game.Players.LocalPlayer,10335160700) then
 	local SP = Window:NewTab("Special")		
 end
 	
