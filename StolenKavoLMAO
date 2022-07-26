@@ -120,11 +120,11 @@ local themeStyles = {
         ElementColor = Color3.fromRGB(22, 29, 31)
     },
     Gold = {
-        SchemeColor = Color3.fromRGB(0, 166, 58),
-        Background = Color3.fromRGB(31, 41, 43),
-        Header = Color3.fromRGB(22, 29, 31),
-        TextColor = Color3.fromRGB(255,255,255),
-        ElementColor = Color3.fromRGB(22, 29, 31)
+ 	SchemeColor = Color3.fromRGB(204, 153, 0),
+	Background = Color3.fromRGB(212, 175, 55),
+	Header = Color3.fromRGB(222, 184, 45),
+	TextColor = Color3.fromRGB(0, 0, 0),
+	ElementColor = Color3.fromRGB(255, 223, 0)
     }
 }
 local oldTheme = ""
