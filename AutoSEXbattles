@@ -1,0 +1,37 @@
+if game.PlaceId == 579955134 then
+	
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/loss23/Jif3/main/StolenKavoLMAO"))()
+local Window = Library.CreateLib("Rate1 | Auto Rap Battles", _G.Settings.Theme)
+
+local PP = Window:NewTab("Rap Battle Stuffs")
+
+local RAP = PP:NewSection("Rap Battles")
+
+local SelectedPlayer
+
+getgenv().P1 = false
+getgenv().P2 = false
+
+RAP:NewDropdown("Select Player one or two", "Auto Vote",{"P1","P2"},function(yes)
+    SelectedPlayer = yes
+end)
+
+RAP:NewToggle("Force Win","Makes Target Win", function(winner)
+    if SelectedPlayer == "P1" then
+        getgenv().P1 = true
+    elseif SelectedPlayer == "P2" then
+        getgenv().P2 = true
+    end
+    
+    while getgenv().P2 == true do
+         game.Workspace.Votes:FireServer(false,"p2")
+         wait(.1)
+    end
+    
+    while getgenv().P1 == true do
+         game.Workspace.Votes:FireServer(false,"p1")
+         wait(.1)
+    end
+end)
+
+end
