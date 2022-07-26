@@ -1,6 +1,6 @@
 if game.PlaceId == 347401822 then
 	
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/loss23/Jif3/main/StolenKavoLMAO"))()
 if _G.Settings.Color == "Gold" then
 	local Window = Library.CreateLib("Rate1 | The Plaza", _G.Color)		
 else
