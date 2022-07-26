@@ -1,4 +1,4 @@
-if game.PlaceId == 347401822 then
+if game.PlaceId == 6700823483 then
 	
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/loss23/Jif3/main/StolenKavoLMAO"))()
 local Window = Library.CreateLib("Rate1 | The Plaza", _G.Settings.Theme)		
