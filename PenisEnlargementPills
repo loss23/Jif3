@@ -5,13 +5,11 @@ local Window = Library.CreateLib("Rate1 | The Plaza", _G.Settings.Theme)
 
 local PP = Window:NewTab("Player")
 local EN = Window:NewTab("Enemies")
-local WO = Window:NewTab("World")
 local SP = Window:NewTab("Special")
 
 
 local player = PP:NewSection("Player")
 local enemies = EN:NewSection("Enemies")
-local World = WO:NewSection("World")
 local spec = SP:NewSection("Special")
 --Player
 
