@@ -1,0 +1,31 @@
+if game.PlaceId == 2098516465 then
+	
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/loss23/Jif3/main/StolenKavoLMAO"))()
+local Window = Library.CreateLib("Rate1 | RHS2", _G.Settings.Theme)
+
+local PP = Window:NewTab("Autofarm")
+local Section = PP:NewSection("Autofarm")
+
+Section:NewButton("Chef Umbra (SPAM CLICK)", "ButtonInfo", function()
+    local args = {
+        [1] = "F35CE5DC-2104-4898-88F5-3D864A8B88A5"
+    }
+    
+    game:GetService("ReplicatedStorage").Remotes.Jobs.ChefUmbras.SectionCompleted:FireServer(unpack(args))
+end)
+Section:NewButton("Sunblox Delivery", "ButtonInfo", function()
+    local humanoid = game.Players.LocalPlayer.Character.HumanoidRootPart
+    _G.SunbloxDelivery = true -- false / true
+    
+    while _G.SunbloxDelivery == true do
+        for i, v in pairs(game.Workspace.LightBeam:GetChildren()) do
+            if v.Name == "Pos" then
+                humanoid.CFrame = v.CFrame
+                wait(0.1)
+            end
+        end
+    end
+end)
+
+
+end
