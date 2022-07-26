@@ -18,9 +18,17 @@ end)
 
 RAP:NewToggle("Force Win","Makes Target Win", function(winner)
     if SelectedPlayer == "P1" then
-        getgenv().P1 = true
+        if getgenv().P1 == true then
+		getgenv().P1 = false
+	else
+		getgenv().P1 = true
+	end
     elseif SelectedPlayer == "P2" then
-        getgenv().P2 = true
+                if getgenv().P2 == true then
+		getgenv().P2 = false
+	else
+		getgenv().P2 = true
+	end
     end
     
     while getgenv().P2 == true do
