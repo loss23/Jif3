@@ -1,0 +1,94 @@
+if game.PlaceId == 4924922222 then
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("RateOne".." Brookhaven", _G.Settings.Theme)
+-- Themes "Serpent", "Synapse", "Sentinel", "Midnight","Ocean", "GrapeTheme", "BloodTheme", "LightTheme", "DarkTheme"
+
+local PP = Window:NewTab("Player")
+
+
+local player = PP:NewSection("Player")
+--Player
+
+player:NewTextBox("shirt", "SEX0X", function(Number)
+
+local Event = game:GetService("ReplicatedStorage").WW["7B7Updat7B7eAvata7B7r"]
+
+Event:FireServer("wear", tonumber(Number))
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "▀▄『R』『1』▄▀";
+ Text = ("Id Number: "..Number);
+ Icon = "rbxassetid://10223592622";
+ Duration = 10;
+ Callback = NotificationBindable;
+})
+
+end)
+
+player:NewTextBox("pants", "SEX0X", function(Number)
+
+local Event = game:GetService("ReplicatedStorage").WW["7B7Updat7B7eAvata7B7r"]
+
+Event:FireServer("wear", tonumber(Number))
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "▀▄『R』『1』▄▀";
+ Text = ("Id Number: "..Number);
+ Icon = "rbxassetid://10223592622";
+ Duration = 10;
+ Callback = NotificationBindable;
+})
+
+end)
+
+player:NewTextBox("hat", "SEX0X", function(Number)
+
+local Event = game:GetService("ReplicatedStorage").WW["7B7Updat7B7eAvata7B7r"]
+
+Event:FireServer("wear", tonumber(Number))
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "▀▄『R』『1』▄▀";
+ Text = ("Id Number: "..Number);
+ Icon = "rbxassetid://10223592622";
+ Duration = 10;
+ Callback = NotificationBindable;
+})
+
+end)
+
+getgenv().Toggled1 = false
+
+player:NewToggle("Purple-Black seizure","FUCK ME IN MY ASS HOLE", function(cream)
+    
+    if getgenv().Toggled1 == false then
+       getgenv().Toggled1 = true 
+    else
+       getgenv().Toggled1 = false 
+    end
+    
+    while getgenv().Toggled1 == true do
+           local A_1 = "skintone"
+    local A_2 = "Eggplant"
+    local Event = game:GetService("ReplicatedStorage").WW["7B7Updat7B7eAvata7B7r"]
+    Event:FireServer(A_1, A_2)
+    
+    wait(.1)
+    
+       local A_1 = "skintone"
+        local A_2 = "Black"
+         local Event = game:GetService("ReplicatedStorage").WW["7B7Updat7B7eAvata7B7r"]
+        Event:FireServer(A_1, A_2)
+ 
+         wait(.1)
+end
+    
+end)
+end
