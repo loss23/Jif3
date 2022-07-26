@@ -10,7 +10,78 @@ local SP = Window:NewTab("Special")
 
 local player = PP:NewSection("Player")
 local enemies = EN:NewSection("Enemies")
-local spec = SP:NewSection("Special")
+if game:GetService("MarketplaceService"):PlayerOwnsAsset(game.Players.LocalPlayer,10335160700) then
+	local spec = SP:NewSection("Special")
+	
+	--Special
+  local value = false
+spec:NewToggle("Force win", "Always lets you win", function(s)
+  value = s
+    if s then
+        local d
+        d = game:service('RunService').Stepped:connect(function()
+            if not value then
+                return d:Disconnect()
+            end
+            
+ A_1 = game:GetService("Players").LocalPlayer
+game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
+ 
+ 
+ A_1 = "Bid"
+ A_2 = "1"
+game:GetService("ReplicatedStorage").SR:FireServer(A_1, A_2)
+ A_1 = "Loan"
+game:GetService("ReplicatedStorage").SR:FireServer(A_1)
+A_1 = "Done"
+game:GetService("ReplicatedStorage").SR:FireServer(A_1)
+
+
+game:GetService("ReplicatedStorage")["Get_Ping"]:Destory()
+end)
+end
+end)
+
+  local value = false
+spec:NewToggle("Glitch bid", "Makes some players bid more", function(s)
+  value = s
+    if s then
+        local d
+        d = game:service('RunService').Stepped:connect(function()
+            if not value then
+                return d:Disconnect()
+            end
+            
+ A_1 = game:GetService("Players").LocalPlayer
+game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
+ 
+
+end)
+end
+end)
+
+spec:NewButton("Glitch bid", "Makes some players bid more", function()
+    A_1 = game:GetService("Players").LocalPlayer
+game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
+  A_1 = game:GetService("Players").LocalPlayer
+game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
+  A_1 = game:GetService("Players").LocalPlayer
+game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
+  A_1 = game:GetService("Players").LocalPlayer
+game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
+  A_1 = game:GetService("Players").LocalPlayer
+game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
+  A_1 = game:GetService("Players").LocalPlayer
+game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
+  A_1 = game:GetService("Players").LocalPlayer
+game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
+  A_1 = game:GetService("Players").LocalPlayer
+game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
+  A_1 = game:GetService("Players").LocalPlayer
+game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
+ 
+end)
+end
 --Player
 
 local value = false
@@ -2320,75 +2391,5 @@ end)
 
 enemies:NewTextBox("Screw User", "Makes another player pay money", function(user)
 end)
-
---Special
-  local value = false
-spec:NewToggle("Force win", "Always lets you win", function(s)
-  value = s
-    if s then
-        local d
-        d = game:service('RunService').Stepped:connect(function()
-            if not value then
-                return d:Disconnect()
-            end
-            
- A_1 = game:GetService("Players").LocalPlayer
-game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
- 
- 
- A_1 = "Bid"
- A_2 = "1"
-game:GetService("ReplicatedStorage").SR:FireServer(A_1, A_2)
- A_1 = "Loan"
-game:GetService("ReplicatedStorage").SR:FireServer(A_1)
-A_1 = "Done"
-game:GetService("ReplicatedStorage").SR:FireServer(A_1)
-
-
-game:GetService("ReplicatedStorage")["Get_Ping"]:Destory()
-end)
-end
-end)
-
-  local value = false
-spec:NewToggle("Glitch bid", "Makes some players bid more", function(s)
-  value = s
-    if s then
-        local d
-        d = game:service('RunService').Stepped:connect(function()
-            if not value then
-                return d:Disconnect()
-            end
-            
- A_1 = game:GetService("Players").LocalPlayer
-game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
- 
-
-end)
-end
-end)
-
-spec:NewButton("Glitch bid", "Makes some players bid more", function()
-    A_1 = game:GetService("Players").LocalPlayer
-game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
-  A_1 = game:GetService("Players").LocalPlayer
-game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
-  A_1 = game:GetService("Players").LocalPlayer
-game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
-  A_1 = game:GetService("Players").LocalPlayer
-game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
-  A_1 = game:GetService("Players").LocalPlayer
-game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
-  A_1 = game:GetService("Players").LocalPlayer
-game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
-  A_1 = game:GetService("Players").LocalPlayer
-game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
-  A_1 = game:GetService("Players").LocalPlayer
-game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
-  A_1 = game:GetService("Players").LocalPlayer
-game:GetService("ReplicatedStorage")["Screw_Event"]:InvokeServer(A_1)
- 
-end)
-
 
 end
