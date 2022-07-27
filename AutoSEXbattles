@@ -63,8 +63,8 @@ RAP:NewToggle("Auto Win ANY game", "Cool lmao", function(winner)
                             wait(0.1)
                     end
             end
-	    wait(.1)
         end
+        wait(.1)
     end
 end)
 
