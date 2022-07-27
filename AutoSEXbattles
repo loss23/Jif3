@@ -51,6 +51,10 @@ RAP:NewToggle("Auto Win ANY game", "Cool lmao", function(winner)
     end
     
     while getgenv().AutoWin == true do
+		local A_1 = "ima win ez ez ez ez ez ez ez ez"
+		local Event = game:GetService("Workspace").RapperChatting
+		Event:FireServer(A_1)
+
         if workspace.RapBattles.Rappers.player1.Value == game.Players.LocalPlayer.Name or workspace.RapBattles.Rappers.player2.Value == game.Players.LocalPlayer.Name then
             if workspace.RapBattles.Rappers.player1.Value == game.Players.LocalPlayer.Name then
                     while workspace.RapBattles.Rappers.player1.Value == game.Players.LocalPlayer.Name do
