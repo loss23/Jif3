@@ -11,22 +11,22 @@ while game.Players.LocalPlayer.CoreStats.Pollen.Value ~= game.Players.LocalPlaye
     
         ScooperEvent:FireServer()
         
-        wait(1)
+        wait(.1)
 end
 
 local f = false
 
 if f == false then 
-game.Players.LocalPlayer.Character:MoveTo(game.Players.LocalPlayer.Honeycomb.Value.LightHolder.Position)
-f = true
+    game.Players.LocalPlayer.Character:MoveTo(game.Players.LocalPlayer.Honeycomb.Value.LightHolder.Position)
+    f = true
 end
 
 if game.Players.LocalPlayer.CoreStats.Pollen.Value >= game.Players.LocalPlayer.CoreStats.Capacity.Value then
    MakeHoney:FireServer(ToggleEventThing)
-   
-   f = false
 end
 
 wait(.1)
+
+f = false
 
 end
