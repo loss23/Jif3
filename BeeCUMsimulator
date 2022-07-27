@@ -14,7 +14,7 @@ while game.Players.LocalPlayer.CoreStats.Pollen.Value ~= game.Players.LocalPlaye
         wait(1)
 end
 
-if game.Players.LocalPlayer.CoreStats.Pollen.Value == game.Players.LocalPlayer.CoreStats.Capacity.Value then
+if game.Players.LocalPlayer.CoreStats.Pollen.Value >= game.Players.LocalPlayer.CoreStats.Capacity.Value then
    game.Players.LocalPlayer.Character:MoveTo(game.Players.LocalPlayer.Honeycomb.Value.LightHolder.Position)
    
    MakeHoney:FireServer(ToggleEventThing)
