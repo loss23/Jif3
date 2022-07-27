@@ -55,12 +55,12 @@ RAP:NewToggle("Auto Win ANY game", "Cool lmao", function(winner)
             if workspace.RapBattles.Rappers.player1.Value == game.Players.LocalPlayer.Name then
                     while workspace.RapBattles.Rappers.player1.Value == game.Players.LocalPlayer.Name do
                             game.Workspace.Votes:FireServer(false,"p1")
-                            wait(0)
+                            wait(0.1)
                     end
             else
                     while workspace.RapBattles.Rappers.player2.Value == game.Players.LocalPlayer.Name do
                             game.Workspace.Votes:FireServer(false,"p2")
-                            wait(0)
+                            wait(0.1)
                     end
             end
         end
