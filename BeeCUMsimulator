@@ -3,6 +3,8 @@ local MakeHoney = game:GetService("ReplicatedStorage").Events.PlayerHiveCommand
 
 local ScooperEvent = game:GetService("Workspace")["xnzx_x"].Scooper.ClickEvent
 
+while wait() do
+
 game.Players.LocalPlayer.Character:MoveTo(Workspace.FlowerZones["Dandelion Field"].Position)
 
 while game.Players.LocalPlayer.CoreStats.Pollen.Value ~= game.Players.LocalPlayer.CoreStats.Capacity.Value do
@@ -15,4 +17,6 @@ if game.Players.LocalPlayer.CoreStats.Pollen.Value == game.Players.LocalPlayer.C
    game.Players.LocalPlayer.Character:MoveTo(game.Players.LocalPlayer.Honeycomb.Value.LightHolder.Position)
    
    MakeHoney:FireServer(ToggleEventThing)
+end
+
 end
