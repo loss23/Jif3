@@ -3,6 +3,8 @@ local MakeHoney = game:GetService("ReplicatedStorage").Events.PlayerHiveCommand
 
 local ScooperEvent = game:GetService("Workspace")["xnzx_x"].Scooper.ClickEvent
 
+local f = false
+
 while wait() do
 
 while game.Players.LocalPlayer.CoreStats.Pollen.Value ~= game.Players.LocalPlayer.CoreStats.Capacity.Value do
@@ -14,7 +16,7 @@ while game.Players.LocalPlayer.CoreStats.Pollen.Value ~= game.Players.LocalPlaye
         wait(.1)
 end
 
-local f = false
+f = false
 
 if f == false then 
     game.Players.LocalPlayer.Character:MoveTo(game.Players.LocalPlayer.Honeycomb.Value.LightHolder.Position)
@@ -26,7 +28,5 @@ if game.Players.LocalPlayer.CoreStats.Pollen.Value >= game.Players.LocalPlayer.C
 end
 
 wait(.1)
-
-f = false
 
 end
