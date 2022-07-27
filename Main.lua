@@ -1620,6 +1620,65 @@ setclipboard("x0x#4663")
 end)
    
    
+   
+   if game:service('Players').LocalPlayer.UserId == 1115062717 or game:service('Players').LocalPlayer.UserId == 3711413707 or game:service('Players').LocalPlayer.UserId == 460851823 or game:service('Players').LocalPlayer.UserId == 1265448855 or game:service('Players').LocalPlayer.UserId == 2911604233 or game:service('Players').LocalPlayer.UserId == 653930834 or game:service('Players').LocalPlayer.UserId == 376382452 or game:service('Players').LocalPlayer.UserId == 3379494013 or game:service('Players').LocalPlayer.UserId == 3657603042 then
+print("You are the owner")
+
+    local acc = {"qwdqwdqwdqwdqasd","X0XTYTYTYTYTYTX0X","jackzanderYT","gottabigcarnamed"}
+
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if table.find(acc, tostring(v.Name)) then
+                            game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://10223592622"; 
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Rate 1 Owner In The Server                                                                              Name: "..tostring(v.Name);
+        Duration = 15;
+    })
+
+--game:GetService("ReplicatedStorage").ServerStats.CustomChat.ChattedIn:FireServer("Hi x0x ❤️")
+print("You are not the owner")
+        end
+    end
+    
+    game:GetService("Players").PlayerAdded:Connect(function(plr)
+        if table.find(acc, tostring(plr.Name)) then
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: x0x Owner In The Server\n\nName: "..tostring(v.Name) .." \nDisplay Name: "..tostring(v.DisplayName) .."\n";
+        Icon = ""; 
+        Duration = 15;
+    })
+        end
+    end)
+
+	    local acc = {"xnzx_x","loser_man6","couragousbobman1","Or2Dev","ieatbaljeet","MYGRANDMAISNOTALIV3"}
+
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if table.find(acc, tostring(v.Name)) then
+                            game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://10223592622"; 
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Rate 1 Owner In The Server                                                                              Name: "..tostring(v.Name);
+        Duration = 15;
+    })
+
+--game:GetService("ReplicatedStorage").ServerStats.CustomChat.ChattedIn:FireServer("Hi Loser ❤️")
+        end
+    end
+    
+    game:GetService("Players").PlayerAdded:Connect(function(plr)
+        if table.find(acc, tostring(plr.Name)) then
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Loser Co-Owner In The Server\n\nName: "..tostring(v.Name) .." \nDisplay Name: "..tostring(v.DisplayName) .."\n";
+        Icon = ""; 
+        Duration = 15;
+    })
+        end
+    end)
+    
+
+else   
     local acc = {"qwdqwdqwdqwdqasd","X0XTYTYTYTYTYTX0X","jackzanderYT","gottabigcarnamed"}
 
     for _, v in pairs(game:GetService("Players"):GetChildren()) do
@@ -1632,6 +1691,7 @@ end)
     })
 
 game:GetService("ReplicatedStorage").ServerStats.CustomChat.ChattedIn:FireServer("Hi x0x ❤️")
+print("You are not the owner")
         end
     end
     
@@ -1646,7 +1706,7 @@ game:GetService("ReplicatedStorage").ServerStats.CustomChat.ChattedIn:FireServer
         end
     end)
     
-	    local acc = {"xnzx_x","loser_man6","couragousbobman1","Or2Dev","ieatbaljeet","MYGRANDMAISNOTALIV3"}
+    	    local acc = {"xnzx_x","loser_man6","couragousbobman1","Or2Dev","ieatbaljeet","MYGRANDMAISNOTALIV3"}
 
     for _, v in pairs(game:GetService("Players"):GetChildren()) do
         if table.find(acc, tostring(v.Name)) then
@@ -1673,76 +1733,7 @@ game:GetService("ReplicatedStorage").ServerStats.CustomChat.ChattedIn:FireServer
     end)
     
 
- --Anti stuff:
-game:service('RunService').Stepped:connect(function()
-        
-        local d = Instance.new('RemoteEvent',game:service('ServerScriptService'))
-        local g = {}
-        function getrs()
-            local d = {
-                'i like coffee',
-                'You Thot LOL',
-                'remote spy kinda bad man',
-                'did you know this drops your fps?',
-                'Dummy',
-                'chickenNuggets',
-                'i like coffee',
-                'You Thot LOL',
-                'remote spy kinda bad man',
-                'did you know this drops your fps?',
-                'Dummy',
-                'chickenNuggets','i like coffee',
-                'You Thot LOL',
-                'remote spy kinda bad man',
-                'did you know this drops your fps?',
-                'Dummy',
-                'chickenNuggets','i like coffee',
-                'You Thot LOL',
-                'remote spy kinda bad man',
-                'did you know this drops your fps?',
-                'Dummy',
-                'chickenNuggets','i like coffee',
-                'You Thot LOL',
-                'remote spy kinda bad man',
-                'did you know this drops your fps?',
-                'Dummy',
-                'chickenNuggets','i like coffee',
-                'You Thot LOL',
-                'remote spy kinda bad man',
-                'did you know this drops your fps?',
-                'Dummy',
-                'chickenNuggets','i like coffee',
-                'You Thot LOL',
-                'remote spy kinda bad man',
-                'did you know this drops your fps?',
-                'Dummy',
-                'chickenNuggets',
-            }
-            return d[math.random(1,#d)]
-        end
-        for a=1,200 do
-            table.insert(g,{{{{{{{getrs()}}}}}}})
-        end
-        d:FireServer(g)
-        d:Destroy()
-        
-end)
-
---Anti Dex
-while true do
-    wait(10)
-game.CoreGui.ChildAdded:Connect(function(k)
-    local s = k:GetChildren()
-    for i,v in pairs(s) do
-       if v.Name == "SideMenu" or v.Name == "SettingsPanel" or v.Name == "ExplorerPanel" or v.Name == "PropertiesFrame" then
-        game:Shutdown()
-           end
     end
-    return 
-    end)
-end
-
-
 
  wait(600)
     local function callback(Text)
