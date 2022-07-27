@@ -11,6 +11,7 @@ local SelectedPlayer
 
 getgenv().P1 = false
 getgenv().P2 = false
+getgenv().AutoWin = false
 
 RAP:NewDropdown("Select Player one or two", "Auto Vote",{"P1","P2"},function(yes)
     SelectedPlayer = yes
@@ -39,6 +40,30 @@ RAP:NewToggle("Force Win","Makes Target Win", function(winner)
     while getgenv().P1 == true do
          game.Workspace.Votes:FireServer(false,"p1")
          wait(.1)
+    end
+end)
+
+RAP:NewToggle("Auto Win ANY game", "Cool lmao", function(winner)
+    if getgenv().AutoWin == false then
+        getgenv().AutoWin = true
+    else
+        getgenv().AutoWin = false
+    end
+    
+    while getgenv().AutoWin == true do
+        if workspace.RapBattles.Rappers.player1.Value == game.Players.LocalPlayer.Name or workspace.RapBattles.Rappers.player2.Value == game.Players.LocalPlayer.Name then
+            if workspace.RapBattles.Rappers.player1.Value == game.Players.LocalPlayer.Name then
+                    while workspace.RapBattles.Rappers.player1.Value == game.Players.LocalPlayer.Name do
+                            game.Workspace.Votes:FireServer(false,"p1")
+                            wait(0)
+                    end
+            else
+                    while workspace.RapBattles.Rappers.player2.Value == game.Players.LocalPlayer.Name do
+                            game.Workspace.Votes:FireServer(false,"p2")
+                            wait(0)
+                    end
+            end
+        end
     end
 end)
 
