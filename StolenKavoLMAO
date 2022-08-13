@@ -147,6 +147,14 @@ Header = Color3.fromRGB(169,216,234),
 TextColor = Color3.fromRGB(0, 0, 0), 
 ElementColor = Color3.fromRGB(255,255,210)
     },
+                    Usa = {
+SchemeColor = Color3.fromRGB(194,0,55), 
+Background = Color3.fromRGB(254,254,254), 
+Header = Color3.fromRGB(1,35,105), 
+TextColor = Color3.fromRGB(255, 255, 255), 
+ElementColor = Color3.fromRGB(194,0,55) 
+
+    },
     Gold = {
 SchemeColor = Color3.fromRGB(204, 153, 0),
 Background = Color3.fromRGB(0, 0, 0),
@@ -212,6 +220,8 @@ function Kavo.CreateLib(kavName, themeList)
         themeList = themeStyles.Sunset
 	elseif themeList == "Winter" then
         themeList = themeStyles.Winter
+	elseif themeList == "Usa" then
+        themeList = themeStyles.Usa
     elseif themeList == "Gold" then
         themeList = themeStyles.Gold
     else
