@@ -126,6 +126,13 @@ Header = Color3.fromRGB(255, 223, 0),
 TextColor = Color3.fromRGB(255, 255, 255),
 ElementColor = Color3.fromRGB(85, 170, 0)
     },
+          R1 = {
+SchemeColor = Color3.fromRGB(207,0,0), 
+Background = Color3.fromRGB(40,40,40), 
+Header = Color3.fromRGB(24,24,24), 
+TextColor = Color3.fromRGB(0, 0, 0), 
+ElementColor = Color3.fromRGB(0,85,255) 
+    },
     Gold = {
 SchemeColor = Color3.fromRGB(204, 153, 0),
 Background = Color3.fromRGB(0, 0, 0),
@@ -185,6 +192,8 @@ function Kavo.CreateLib(kavName, themeList)
         themeList = themeStyles.Serpent
 	    elseif themeList == "Lego" then
         themeList = themeStyles.Lego
+	 elseif themeList == "R1" then
+        themeList = themeStyles.R1
     elseif themeList == "Gold" then
         themeList = themeStyles.Gold
     else
