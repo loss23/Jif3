@@ -122,7 +122,7 @@ local themeStyles = {
        Lego = {
 SchemeColor = Color3.fromRGB(0, 0, 127),
 Background = Color3.fromRGB(170, 0, 0),
-Header = Color3.fromRGB(170, 255, 0),
+Header = Color3.fromRGB(255, 223, 0),
 TextColor = Color3.fromRGB(255, 255, 255),
 ElementColor = Color3.fromRGB(85, 170, 0)
     },
