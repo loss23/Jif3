@@ -153,7 +153,13 @@ Background = Color3.fromRGB(254,254,254),
 Header = Color3.fromRGB(1,35,105), 
 TextColor = Color3.fromRGB(255, 255, 255), 
 ElementColor = Color3.fromRGB(194,0,55) 
-
+    },
+   IronMan = {
+SchemeColor = Color3.fromRGB(143,155,162), 
+Background = Color3.fromRGB(228,212,150), 
+Header = Color3.fromRGB(184,56,58), 
+TextColor = Color3.fromRGB(255, 255, 255), 
+ElementColor = Color3.fromRGB(184,56,58) 
     },
     Gold = {
 SchemeColor = Color3.fromRGB(204, 153, 0),
@@ -222,6 +228,8 @@ function Kavo.CreateLib(kavName, themeList)
         themeList = themeStyles.Winter
 	elseif themeList == "Usa" then
         themeList = themeStyles.Usa
+	elseif themeList == "IronMan" then
+        themeList = themeStyles.IronMan
     elseif themeList == "Gold" then
         themeList = themeStyles.Gold
     else
