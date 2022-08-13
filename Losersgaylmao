@@ -1,0 +1,1283 @@
+
+
+	
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/loss23/Jif3/main/StolenKavoLMAO"))()
+local Window = Library.CreateLib("Rate1 | Army Tycoon💣", _G.Settings.Theme)		
+
+local PP = Window:NewTab("Player")
+
+local EN = Window:NewTab("Enemies")
+
+if game:GetService("MarketplaceService"):PlayerOwnsAsset(game.Players.LocalPlayer,10335160700) then
+	local SP = Window:NewTab("Special")	
+	local spec = SP:NewSection("Player")
+	local spec2 = SP:NewSection("Troops")
+	local spec3 = SP:NewSection("Bombs")
+   
+    
+    --Special
+spec:NewToggle("Auto Rebirth + Auto Builds", "Cool lmao", function(winner)
+ game:GetService("ReplicatedStorage").RE.rebirth:FireServer()
+
+ 
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "This will lag a lot";
+        Icon = "rbxassetid://10223592622"; 
+        Duration = 15;
+    })
+   if getgenv().Rebirthsandbuilds == false then
+        getgenv().Rebirthsandbuilds = true
+    else
+        getgenv().Rebirthsandbuilds = false
+    end
+    
+    while getgenv().Rebirthsandbuilds == true do
+
+for i,v in pairs(game.Workspace.Game.Buttons:GetChildren()) do
+	if v.Name == game.Players.LocalPlayer.Name then
+		for i,v2 in pairs(v:GetChildren()) do
+			game:GetService("ReplicatedStorage").RE.relinquish:FireServer(v2, true)
+		end
+	end
+end
+
+for i,v in pairs(game.Workspace.Game.Buttons:GetChildren()) do
+	if v.Name == game.Players.LocalPlayer.Name then
+		for i,v2 in pairs(v:GetChildren()) do
+			for i,v3 in pairs(v2:GetChildren()) do
+				if v3:IsA("ObjectValue") then
+					v3.Name = v3.Value.Name
+				end
+			end
+		end
+	end
+end
+
+
+for i,v in pairs(game.Workspace.Game.Buttons:GetChildren()) do
+	if v.Name == game.Players.LocalPlayer.Name then
+		for i,v2 in pairs(v:GetChildren()) do
+			for i,v3 in pairs(v2:GetChildren()) do
+				if v3:IsA("ObjectValue") then
+					if v3.Name == "Barracks" then
+						local Class = game.ReplicatedStorage.Game.Buildings["Barracks"]["2"];
+						local Button = v2;
+						local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+						Target:FireServer(Class, Button);
+					else
+						if v3.Name == "Greenhouse" then
+							local Class = game.ReplicatedStorage.Game.Buildings["Greenhouse"]["2"];
+							local Button = v2;
+							local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+							Target:FireServer(Class, Button);
+						else
+							if v3.Name == "Factory" then
+									local Class = game.ReplicatedStorage.Game.Buildings["Factory"]["3"];
+									local Button = v2;
+									local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+									Target:FireServer(Class, Button);
+							else
+								if v3.Name == "Oil Field" then
+										local Class = game.ReplicatedStorage.Game.Buildings["Oil Field"]["2"];
+										local Button = v2;
+										local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+										Target:FireServer(Class, Button);
+								else
+									if v3.Name == "Guard Tower" then
+										local Class = game.ReplicatedStorage.Game.Buildings["Guard Tower"]["1"];
+										local Button = v2;
+										local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+										Target:FireServer(Class, Button);
+									else
+										if v3.Name == "Wall" then
+											local Class = game.ReplicatedStorage.Game.Buildings["Wall"]["2"];
+											local Button = v2;
+											local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+											Target:FireServer(Class, Button);
+										else
+											if v3.Name == "Generator Powerplant" then
+												local Class = game.ReplicatedStorage.Game.Buildings["Generator Powerplant"]["1"];
+												local Button = v2;
+												local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+												Target:FireServer(Class, Button);
+											else
+												if v3.Name == "Missile Factory" then
+													local Class = game.ReplicatedStorage.Game.Buildings["Missile Factory"]["1"];
+													local Button = v2;
+													local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+													Target:FireServer(Class, Button);
+												else
+													if v3.Name == "Command Center" then
+														local Class = game.ReplicatedStorage.Game.Buildings["Command Center"]["2"];
+														local Button = v2;
+														local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+														Target:FireServer(Class, Button);
+													else
+														if v3.Name == "Drone Factory" then
+															local Class = game.ReplicatedStorage.Game.Buildings["Drone Factory"]["1"];
+															local Button = v2;
+															local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+															Target:FireServer(Class, Button);
+														else
+															if v3.Name == "Military" then
+																local Class = game.ReplicatedStorage.Game.Buildings.Military["Tank Factory"]["2"];
+																local Button = v2;
+																local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+																Target:FireServer(Class, Button);
+															else
+																if v3.Name == "Nuclear Powerplant" then
+																	local Class = game.ReplicatedStorage.Game.Buildings["Nuclear Powerplant"]["1"];
+																	local Button = v2;
+																	local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+																	Target:FireServer(Class, Button);
+																else
+																	if v3.Name == "Airport" then
+																		local Class = game.ReplicatedStorage.Game.Buildings["Airport"]["1"];
+																		local Button = v2;
+																		local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+																		Target:FireServer(Class, Button);
+																	else
+																		if v3.Name == "Helicopter Bay" then
+																			local Class = game.ReplicatedStorage.Game.Buildings["Helicopter Bay"]["2"];
+																			local Button = v2;
+																			local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+																			Target:FireServer(Class, Button);
+																		else
+																			if v3.Name == "Main Base" then
+																				local Class = game.ReplicatedStorage.Game.Buildings["Main Base"]["2"];
+																				local Button = v2;
+																				local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+																				Target:FireServer(Class, Button);
+																			end
+																		end
+																	end
+																end
+															end
+														end
+													end
+												end
+											end
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+end
+wait(1)
+
+game:GetService("ReplicatedStorage").RE.rebirth:FireServer()
+
+for i,v in pairs(game.Workspace.Game.Buttons:GetChildren()) do
+	if v.Name == game.Players.LocalPlayer.Name then
+		for i,v2 in pairs(v:GetChildren()) do
+			game:GetService("ReplicatedStorage").RE.relinquish:FireServer(v2, true)
+		end
+	end
+end
+
+for i,v in pairs(game.Workspace.Game.Buttons:GetChildren()) do
+	if v.Name == game.Players.LocalPlayer.Name then
+		for i,v2 in pairs(v:GetChildren()) do
+			for i,v3 in pairs(v2:GetChildren()) do
+				if v3:IsA("ObjectValue") then
+					v3.Name = v3.Value.Name
+				end
+			end
+		end
+	end
+end
+
+
+for i,v in pairs(game.Workspace.Game.Buttons:GetChildren()) do
+	if v.Name == game.Players.LocalPlayer.Name then
+		for i,v2 in pairs(v:GetChildren()) do
+			for i,v3 in pairs(v2:GetChildren()) do
+				if v3:IsA("ObjectValue") then
+					if v3.Name == "Barracks" then
+						local Class = game.ReplicatedStorage.Game.Buildings["Barracks"]["2"];
+						local Button = v2;
+						local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+						Target:FireServer(Class, Button);
+					else
+						if v3.Name == "Greenhouse" then
+							local Class = game.ReplicatedStorage.Game.Buildings["Greenhouse"]["2"];
+							local Button = v2;
+							local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+							Target:FireServer(Class, Button);
+						else
+							if v3.Name == "Factory" then
+									local Class = game.ReplicatedStorage.Game.Buildings["Factory"]["3"];
+									local Button = v2;
+									local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+									Target:FireServer(Class, Button);
+							else
+								if v3.Name == "Oil Field" then
+										local Class = game.ReplicatedStorage.Game.Buildings["Oil Field"]["2"];
+										local Button = v2;
+										local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+										Target:FireServer(Class, Button);
+								else
+									if v3.Name == "Guard Tower" then
+										local Class = game.ReplicatedStorage.Game.Buildings["Guard Tower"]["1"];
+										local Button = v2;
+										local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+										Target:FireServer(Class, Button);
+									else
+										if v3.Name == "Wall" then
+											local Class = game.ReplicatedStorage.Game.Buildings["Wall"]["2"];
+											local Button = v2;
+											local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+											Target:FireServer(Class, Button);
+										else
+											if v3.Name == "Generator Powerplant" then
+												local Class = game.ReplicatedStorage.Game.Buildings["Generator Powerplant"]["1"];
+												local Button = v2;
+												local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+												Target:FireServer(Class, Button);
+											else
+												if v3.Name == "Missile Factory" then
+													local Class = game.ReplicatedStorage.Game.Buildings["Missile Factory"]["1"];
+													local Button = v2;
+													local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+													Target:FireServer(Class, Button);
+												else
+													if v3.Name == "Command Center" then
+														local Class = game.ReplicatedStorage.Game.Buildings["Command Center"]["2"];
+														local Button = v2;
+														local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+														Target:FireServer(Class, Button);
+													else
+														if v3.Name == "Drone Factory" then
+															local Class = game.ReplicatedStorage.Game.Buildings["Drone Factory"]["1"];
+															local Button = v2;
+															local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+															Target:FireServer(Class, Button);
+														else
+															if v3.Name == "Military" then
+																local Class = game.ReplicatedStorage.Game.Buildings.Military["Tank Factory"]["2"];
+																local Button = v2;
+																local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+																Target:FireServer(Class, Button);
+															else
+																if v3.Name == "Nuclear Powerplant" then
+																	local Class = game.ReplicatedStorage.Game.Buildings["Nuclear Powerplant"]["1"];
+																	local Button = v2;
+																	local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+																	Target:FireServer(Class, Button);
+																else
+																	if v3.Name == "Airport" then
+																		local Class = game.ReplicatedStorage.Game.Buildings["Airport"]["1"];
+																		local Button = v2;
+																		local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+																		Target:FireServer(Class, Button);
+																	else
+																		if v3.Name == "Helicopter Bay" then
+																			local Class = game.ReplicatedStorage.Game.Buildings["Helicopter Bay"]["2"];
+																			local Button = v2;
+																			local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+																			Target:FireServer(Class, Button);
+																		else
+																			if v3.Name == "Main Base" then
+																				local Class = game.ReplicatedStorage.Game.Buildings["Main Base"]["2"];
+																				local Button = v2;
+																				local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+																				Target:FireServer(Class, Button);
+																			end
+																		end
+																	end
+																end
+															end
+														end
+													end
+												end
+											end
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+end
+wait(1)
+
+    end
+end)
+
+spec:NewToggle("Break the game", "Cool lmao", function(winner)
+ 
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "This will break the game (Use for like 2 seconds)";
+        Icon = "rbxassetid://10223592622"; 
+        Duration = 15;
+    })
+
+wait(0.1)
+   if getgenv().Capture == false then
+        getgenv().Capture = true
+    else
+        getgenv().Capture = false
+    end
+    
+    while getgenv().Capture == true do
+
+local args = {
+    [1] = workspace.Game.Base.Interactives.GoldMine4,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").RE.StartCapturing:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = workspace.Game.Base.Interactives.GoldMine3,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").RE.StartCapturing:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = workspace.Game.Base.Interactives.GoldMine2,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").RE.StartCapturing:FireServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = workspace.Game.Base.Interactives.GoldMine1,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").RE.StartCapturing:FireServer(unpack(args))
+
+local args = {
+    [1] = workspace.Game.Base.Interactives.CapturePoint,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").RE.StartCapturing:FireServer(unpack(args))
+wait(0)
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(744, 52, 1986)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(592, 52, 2155)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(607, 52, 2003)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(612, 52, 1838)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(437, 52, 1982)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+wait(0)
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(744, 52, 1986)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(592, 52, 2155)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(607, 52, 2003)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(612, 52, 1838)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(437, 52, 1982)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+wait(0)
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(744, 52, 1986)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(592, 52, 2155)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(607, 52, 2003)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(612, 52, 1838)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(437, 52, 1982)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+	for i,v in pairs(game.Workspace.Game.Units:GetChildren()) do
+if v.Name == game.Players.LocalPlayer.Name then
+else
+for i,v2 in pairs(v:GetChildren()) do
+local Missile = "Nuke"
+local Position = v2.Torso.Position
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(Missile, Position)
+end
+end
+end
+
+end
+end)
+
+
+
+spec2:NewTextBox("Change Troop Flags", "No preset flags! (If you want to test the ids do it in settings", function(Number)
+
+    local function callback(Text)
+ if Text == "Okay!" then
+  print ("Answer")
+end
+end
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+ Title = ("Id: "..Number);
+ Text = "";
+ Icon = ("rbxassetid://"..Number);
+ Duration = 10;
+ Callback = NotificataionBindable;
+})
+
+
+local args = {
+    [1] = "http://www.roblox.com/asset/?id="..Number
+}
+
+game:GetService("ReplicatedStorage").RE.setFlag:FireServer(unpack(args))
+
+
+end)
+
+
+spec2:NewDropdown("Pick Character and Vehicle skins", "", {"Black","Desert","Default"}, function(currentOption)
+    Skin = currentOption
+end)
+
+spec2:NewButton("Equip Skin ", "Equipts the skin idiot", function()
+
+
+    
+    local args = {
+    [1] = ""..Skin
+}
+
+game:GetService("ReplicatedStorage").RE.changeSkins:FireServer(unpack(args))
+
+    local function callback(Text)
+ if Text == "Okay!" then
+  print ("Answer")
+end
+end
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "▀▄『R』『1』▄▀";
+ Text = ("Equipted: " ..Skin);
+ Icon = "rbxassetid://10223592622";
+ Duration = 10;
+ Callback = NotificationBindable;
+})
+end)
+
+spec2:NewToggle("Spam change skins", "Fucking idiot really doesn't know what that means", function(e)
+    if getgenv().Skinchange == false then
+       getgenv().Skinchange = true
+    else
+       getgenv().Skinchange = false
+    end
+    
+    while getgenv().Skinchange == true do
+    local args = {
+    [1] = "Default"
+}
+
+game:GetService("ReplicatedStorage").RE.changeSkins:FireServer(unpack(args))
+wait()
+    local args = {
+    [1] = "Desert"
+}
+
+game:GetService("ReplicatedStorage").RE.changeSkins:FireServer(unpack(args))
+wait()
+    local args = {
+    [1] = "Black"
+}
+
+game:GetService("ReplicatedStorage").RE.changeSkins:FireServer(unpack(args))
+        wait(.1)
+    end
+end)
+
+
+spec3:NewDropdown("Pick Bombs/missles/Nukes", "", {"Light Artillery","Heavy Artillery","Bomb Airstrike","Napalm Airstrike","Artsillery Barrage","Cruise Missile","Nuke"}, function(currentOption)
+    Bomb = currentOption
+        local function callback(Text)
+ if Text == "Okay!" then
+  print ("Answer")
+end
+end
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "▀▄『R』『1』▄▀";
+ Text = ("Picked: " ..Bomb);
+ Icon = "rbxassetid://10223592622";
+ Duration = 10;
+ Callback = NotificationBindable;
+})
+end)
+
+ spec3:NewKeybind("Custom bomb mouse positions", "Fucking idiot", Enum.KeyCode.E, function()
+     local mouse = game:service'Players'.LocalPlayer:GetMouse()
+	game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(""..Bomb,Vector3.new(mouse.Hit.p.X,48.6649132,mouse.Hit.p.Z))
+end)
+
+
+spec3:NewKeybind("Nuke All Units", "Fucking idiot", Enum.KeyCode.L, function()
+	for i,v in pairs(game.Workspace.Game.Units:GetChildren()) do
+if v.Name == game.Players.LocalPlayer.Name then
+else
+for i,v2 in pairs(v:GetChildren()) do
+local Missile = "Nuke"
+local Position = v2.Torso.Position
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(Missile, Position)
+end
+end
+end
+
+
+end)
+
+end -- End of Special
+
+
+
+
+
+local CS = Window:NewTab("Credits/Settings")
+
+getgenv().Rebirths = false
+getgenv().Rebirthsandbuilds = false
+getgenv().Bomb = false
+getgenv().Skinchange = false
+getgenv().Capture = false
+
+local Player = PP:NewSection("Player")
+local Flags = PP:NewSection("Preset Flags")
+local Enemies = EN:NewSection("Enemies")
+local set = CS:NewSection("Settings")
+local cre = CS:NewSection("Credit")
+
+
+
+--Player
+
+Player:NewButton("Get all buildings", "CHAOS", function()
+for i,v in pairs(game.Workspace.Game.Buttons:GetChildren()) do
+	if v.Name == game.Players.LocalPlayer.Name then
+		for i,v2 in pairs(v:GetChildren()) do
+			game:GetService("ReplicatedStorage").RE.relinquish:FireServer(v2, true)
+		end
+	end
+end
+
+for i,v in pairs(game.Workspace.Game.Buttons:GetChildren()) do
+	if v.Name == game.Players.LocalPlayer.Name then
+		for i,v2 in pairs(v:GetChildren()) do
+			for i,v3 in pairs(v2:GetChildren()) do
+				if v3:IsA("ObjectValue") then
+					v3.Name = v3.Value.Name
+				end
+			end
+		end
+	end
+end
+
+
+for i,v in pairs(game.Workspace.Game.Buttons:GetChildren()) do
+	if v.Name == game.Players.LocalPlayer.Name then
+		for i,v2 in pairs(v:GetChildren()) do
+			for i,v3 in pairs(v2:GetChildren()) do
+				if v3:IsA("ObjectValue") then
+					if v3.Name == "Barracks" then
+						local Class = game.ReplicatedStorage.Game.Buildings["Barracks"]["2"];
+						local Button = v2;
+						local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+						Target:FireServer(Class, Button);
+					else
+						if v3.Name == "Greenhouse" then
+							local Class = game.ReplicatedStorage.Game.Buildings["Greenhouse"]["2"];
+							local Button = v2;
+							local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+							Target:FireServer(Class, Button);
+						else
+							if v3.Name == "Factory" then
+									local Class = game.ReplicatedStorage.Game.Buildings["Factory"]["3"];
+									local Button = v2;
+									local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+									Target:FireServer(Class, Button);
+							else
+								if v3.Name == "Oil Field" then
+										local Class = game.ReplicatedStorage.Game.Buildings["Oil Field"]["2"];
+										local Button = v2;
+										local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+										Target:FireServer(Class, Button);
+								else
+									if v3.Name == "Guard Tower" then
+										local Class = game.ReplicatedStorage.Game.Buildings["Guard Tower"]["1"];
+										local Button = v2;
+										local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+										Target:FireServer(Class, Button);
+									else
+										if v3.Name == "Wall" then
+											local Class = game.ReplicatedStorage.Game.Buildings["Wall"]["2"];
+											local Button = v2;
+											local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+											Target:FireServer(Class, Button);
+										else
+											if v3.Name == "Generator Powerplant" then
+												local Class = game.ReplicatedStorage.Game.Buildings["Generator Powerplant"]["1"];
+												local Button = v2;
+												local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+												Target:FireServer(Class, Button);
+											else
+												if v3.Name == "Missile Factory" then
+													local Class = game.ReplicatedStorage.Game.Buildings["Missile Factory"]["1"];
+													local Button = v2;
+													local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+													Target:FireServer(Class, Button);
+												else
+													if v3.Name == "Command Center" then
+														local Class = game.ReplicatedStorage.Game.Buildings["Command Center"]["2"];
+														local Button = v2;
+														local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+														Target:FireServer(Class, Button);
+													else
+														if v3.Name == "Drone Factory" then
+															local Class = game.ReplicatedStorage.Game.Buildings["Drone Factory"]["1"];
+															local Button = v2;
+															local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+															Target:FireServer(Class, Button);
+														else
+															if v3.Name == "Military" then
+																local Class = game.ReplicatedStorage.Game.Buildings.Military["Tank Factory"]["2"];
+																local Button = v2;
+																local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+																Target:FireServer(Class, Button);
+															else
+																if v3.Name == "Nuclear Powerplant" then
+																	local Class = game.ReplicatedStorage.Game.Buildings["Nuclear Powerplant"]["1"];
+																	local Button = v2;
+																	local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+																	Target:FireServer(Class, Button);
+																else
+																	if v3.Name == "Airport" then
+																		local Class = game.ReplicatedStorage.Game.Buildings["Airport"]["1"];
+																		local Button = v2;
+																		local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+																		Target:FireServer(Class, Button);
+																	else
+																		if v3.Name == "Helicopter Bay" then
+																			local Class = game.ReplicatedStorage.Game.Buildings["Helicopter Bay"]["2"];
+																			local Button = v2;
+																			local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+																			Target:FireServer(Class, Button);
+																		else
+																			if v3.Name == "Main Base" then
+																				local Class = game.ReplicatedStorage.Game.Buildings["Main Base"]["2"];
+																				local Button = v2;
+																				local Target = game:GetService("ReplicatedStorage").RE.insertBuilding;
+																				Target:FireServer(Class, Button);
+																			end
+																		end
+																	end
+																end
+															end
+														end
+													end
+												end
+											end
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+end
+end)
+
+Player:NewToggle("Auto Rebirth", "Cool lmao", function(winner)
+ 
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "MUST HAVE ALL BUILDINGS BUILT!";
+        Icon = "rbxassetid://10223592622"; 
+        Duration = 15;
+    })
+   if getgenv().Rebirths == false then
+        getgenv().Rebirths = true
+    else
+        getgenv().Rebirths = false
+    end
+    
+    while getgenv().Rebirths == true do
+
+game:GetService("ReplicatedStorage").RE.rebirth:FireServer()
+
+
+    end
+end)
+
+
+
+
+--Flags
+
+Flags:NewButton("Rate One Flag", "Sets your troops flag", function()
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "Imageset to: Rate One";
+        Icon = "rbxassetid://10223592622"; 
+        Duration = 15;
+    })
+local args = {
+    [1] = "http://www.roblox.com/asset/?id=10223592622"
+}
+
+game:GetService("ReplicatedStorage").RE.setFlag:FireServer(unpack(args))
+
+end)
+
+Flags:NewButton("Dog Army Flag", "Sets your troops flag", function()
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "Imageset to: Dog Army";
+        Icon = "rbxassetid://10322891575"; 
+        Duration = 15;
+    })
+local args = {
+    [1] = "http://www.roblox.com/asset/?id=10322891569"
+}
+
+game:GetService("ReplicatedStorage").RE.setFlag:FireServer(unpack(args))
+
+end)
+
+Flags:NewButton("Run Flag", "Sets your troops flag", function()
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "Imageset to: Run ";
+        Icon = "rbxassetid://1090363975"; 
+        Duration = 15;
+    })
+local args = {
+    [1] = "http://www.roblox.com/asset/?id=1090363975"
+}
+
+game:GetService("ReplicatedStorage").RE.setFlag:FireServer(unpack(args))
+
+end)
+
+Flags:NewButton("Caught in 4k Flag", "Sets your troops flag", function()
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "Imageset to: Caught in 4k ";
+        Icon = "rbxassetid://9261805242"; 
+        Duration = 15;
+    })
+local args = {
+    [1] = "http://www.roblox.com/asset/?id=9261805242"
+}
+
+game:GetService("ReplicatedStorage").RE.setFlag:FireServer(unpack(args))
+
+end)
+
+Flags:NewButton("What the fuck? Flag", "Sets your troops flag", function()
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "Imageset to: What the fuck? ";
+        Icon = "rbxassetid://9820716925"; 
+        Duration = 15;
+    })
+local args = {
+    [1] = "http://www.roblox.com/asset/?id=9820716925"
+}
+
+game:GetService("ReplicatedStorage").RE.setFlag:FireServer(unpack(args))
+
+end)
+
+
+-- Enemies
+
+Enemies:NewButton("Bomb all", "CHAOS", function()
+
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "Yes sir. Lauching in:";
+        Icon = ""; 
+        Duration = 15;
+    })
+wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "3";
+        Icon = ""; 
+        Duration = 15;
+    })
+wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "2";
+        Icon = ""; 
+        Duration = 15;
+    })
+wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "1";
+        Icon = ""; 
+        Duration = 15;
+    })
+
+
+wait(1)
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(744, 52, 1986)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(592, 52, 2155)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(607, 52, 2003)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(612, 52, 1838)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(437, 52, 1982)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+
+
+
+	for i,v in pairs(game.Workspace.Game.Units:GetChildren()) do
+if v.Name == game.Players.LocalPlayer.Name then
+else
+for i,v2 in pairs(v:GetChildren()) do
+local Missile = "Bomb Airstrike"
+local Position = v2.Torso.Position
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(Missile, Position)
+local Missile = "Bomb Airstrike"
+local Position = v2.Torso.Position
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(Missile, Position)
+
+end
+end
+end
+
+
+end)
+
+
+Enemies:NewToggle("Auto Bomb Middle", "Cool lmao", function(winner)
+  
+                  game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "Yes sir. Lauching in:";
+        Icon = ""; 
+        Duration = 15;
+    })
+wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "3";
+        Icon = ""; 
+        Duration = 15;
+    })
+wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "2";
+        Icon = ""; 
+        Duration = 15;
+    })
+wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "1";
+        Icon = ""; 
+        Duration = 15;
+    })
+
+  
+    if getgenv().Bomb == false then
+        getgenv().Bomb = true
+    else
+        getgenv().Bomb = false
+    end
+    
+    while getgenv().Bomb == true do
+
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(744, 52, 1986)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(592, 52, 2155)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(607, 52, 2003)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(612, 52, 1838)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+local args = {
+    [1] = "Nuke",
+    [2] = Vector3.new(437, 52, 1982)
+}
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(unpack(args))
+
+       wait(15)
+    end
+end)
+
+ Enemies:NewKeybind("Nuke mouse positions", "Fucking idiot", Enum.KeyCode.E, function()
+     local mouse = game:service'Players'.LocalPlayer:GetMouse()
+	game:GetService("ReplicatedStorage").RE.FireMissile:FireServer("Nuke",Vector3.new(mouse.Hit.p.X,48.6649132,mouse.Hit.p.Z))
+end)
+
+ Enemies:NewKeybind("Bomb Airstrike mouse positions", "Fucking idiot", Enum.KeyCode.H, function()
+     local mouse = game:service'Players'.LocalPlayer:GetMouse()
+	game:GetService("ReplicatedStorage").RE.FireMissile:FireServer("Bomb Airstrike",Vector3.new(mouse.Hit.p.X,48.6649132,mouse.Hit.p.Z))
+end)
+
+Enemies:NewKeybind("Kill All Units", "Fucking idiot", Enum.KeyCode.J, function()
+	for i,v in pairs(game.Workspace.Game.Units:GetChildren()) do
+if v.Name == game.Players.LocalPlayer.Name then
+else
+for i,v2 in pairs(v:GetChildren()) do
+local Missile = "Bomb Airstrike"
+local Position = v2.Torso.Position
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(Missile, Position)
+local Missile = "Bomb Airstrike"
+local Position = v2.Torso.Position
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(Missile, Position)
+local Missile = "Bomb Airstrike"
+local Position = v2.Torso.Position
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(Missile, Position)
+local Missile = "Bomb Airstrike"
+local Position = v2.Torso.Position
+game:GetService("ReplicatedStorage").RE.FireMissile:FireServer(Missile, Position)
+end
+end
+end
+end)
+
+
+--Special
+
+--Credit/setting
+
+set:NewButton("Rtx", "Makes your game pretty pretty", function()
+
+getgenv().mode = "Summer" -- Choose from Summer and Autumn
+
+local a = game.Lighting
+a.Ambient = Color3.fromRGB(33, 33, 33)
+a.Brightness = 1.00
+a.ColorShift_Bottom = Color3.fromRGB(0, 0, 0)
+a.ColorShift_Top = Color3.fromRGB(255, 247, 237)
+a.EnvironmentDiffuseScale = 0.105
+a.EnvironmentSpecularScale = 0.522
+a.GlobalShadows = true
+a.OutdoorAmbient = Color3.fromRGB(51, 54, 67)
+a.ShadowSoftness = 0.04
+a.GeographicLatitude = -15.525
+a.ExposureCompensation = 0.55
+local b = Instance.new("BloomEffect", a)
+b.Enabled = true
+b.Intensity = 0.04
+b.Size = 1900
+b.Threshold = 0.915
+local c = Instance.new("ColorCorrectionEffect", a)
+c.Brightness = 0.110
+c.Contrast = 0.49
+c.Enabled = true
+c.Saturation = 0.2
+c.TintColor = Color3.fromRGB(217, 145, 57)
+if getgenv().mode == "Summer" then
+   c.TintColor = Color3.fromRGB(255, 220, 148)
+elseif getgenv().mode == "Autumn" then
+   c.TintColor = Color3.fromRGB(217, 145, 57)
+else
+   warn("No mode selected!")
+   print("Please select a mode")
+   b:Destroy()
+   c:Destroy()
+end
+local d = Instance.new("DepthOfFieldEffect", a)
+d.Enabled = true
+d.FarIntensity = 0.077
+d.FocusDistance = 21.54
+d.InFocusRadius = 20.77
+d.NearIntensity = 0.277
+local e = Instance.new("ColorCorrectionEffect", a)
+e.Brightness = 0
+e.Contrast = -0.07
+e.Saturation = 0
+e.Enabled = true
+e.TintColor = Color3.fromRGB(255, 247, 239)
+local e2 = Instance.new("ColorCorrectionEffect", a)
+e2.Brightness = 0.2
+e2.Contrast = 0.45
+e2.Saturation = -0.1
+e2.Enabled = true
+e2.TintColor = Color3.fromRGB(255, 255, 255)
+local s = Instance.new("SunRaysEffect", a)
+s.Enabled = true
+s.Intensity = 0.01
+s.Spread = 0.146
+
+end)
+
+set:NewTextBox("Test id numbers", "Tests the id to make sure it works (Because the game sucks at doing that)", function(Number)
+
+    local function callback(Text)
+ if Text == "Okay!" then
+  print ("Answer")
+end
+end
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+ Title = ("Id: "..Number);
+ Text = "";
+ Icon = ("rbxassetid://"..Number);
+ Duration = 10;
+ Callback = NotificataionBindable;
+})
+
+end)
+
+set:NewKeybind("Close/Open ui", "Fucking idiot", Enum.KeyCode.LeftControl, function()
+Library:ToggleUI()
+end)
+-- Credit
+
+cre:NewButton("JOIN OUR DISCORD!", "Joins the rate one discord!", function()
+local json = {
+	["cmd"] = "INVITE_BROWSER",
+	["args"] = {
+		["code"] = "V6n4xYRHvf"
+	},
+	["nonce"] = 'a'
+}
+spawn(function()
+	print(syn.request({
+		Url = 'http://127.0.0.1:6463/rpc?v=1',
+		Method = 'POST',
+		Headers = {
+			['Content-Type'] = 'application/json',
+			['Origin'] = 'https://discord.com'
+		},
+		Body = game:GetService('HttpService'):JSONEncode(json),
+	}).Body)
+end)
+
+end)
+
+cre:NewButton("Copy x0x#4663 (Owner)", "Copies the owners discord tag", function()
+setclipboard("x0x#4663")
+end)
+
+cre:NewButton("Copy loser#5808 (Co-Owner)", "Copies the co-owners discord tag", function()
+setclipboard("loser#5808")
+end)
+
+
+   
+   if game:service('Players').LocalPlayer.UserId == 1115062717 or game:service('Players').LocalPlayer.UserId == 3711413707 or game:service('Players').LocalPlayer.UserId == 460851823 or game:service('Players').LocalPlayer.UserId == 1265448855 or game:service('Players').LocalPlayer.UserId == 2911604233 or game:service('Players').LocalPlayer.UserId == 653930834 or game:service('Players').LocalPlayer.UserId == 376382452 or game:service('Players').LocalPlayer.UserId == 3379494013 or game:service('Players').LocalPlayer.UserId == 3657603042 then
+print("You are the owner")
+
+    local acc = {"qwdqwdqwdqwdqasd","X0XTYTYTYTYTYTX0X","jackzanderYT","gottabigcarnamed"}
+
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if table.find(acc, tostring(v.Name)) then
+                            game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://10223592622"; 
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Rate 1 Owner In The Server                                                                              Name: "..tostring(v.Name);
+        Duration = 15;
+    })
+
+--game:GetService("ReplicatedStorage").ServerStats.CustomChat.ChattedIn:FireServer("Hi x0x ❤️")
+print("You are not the owner")
+        end
+    end
+    
+    game:GetService("Players").PlayerAdded:Connect(function(plr)
+        if table.find(acc, tostring(plr.Name)) then
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: x0x Owner In The Server\n\nName: "..tostring(v.Name) .." \nDisplay Name: "..tostring(v.DisplayName) .."\n";
+        Icon = ""; 
+        Duration = 15;
+    })
+        end
+    end)
+
+	    local acc = {"xnzx_x","loser_man6","couragousbobman1","Or2Dev","ieatbaljeet","MYGRANDMAISNOTALIV3"}
+
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if table.find(acc, tostring(v.Name)) then
+                            game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://10223592622"; 
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Rate 1 Owner In The Server                                                                              Name: "..tostring(v.Name);
+        Duration = 15;
+    })
+
+--game:GetService("ReplicatedStorage").ServerStats.CustomChat.ChattedIn:FireServer("Hi Loser ❤️")
+        end
+    end
+    
+    game:GetService("Players").PlayerAdded:Connect(function(plr)
+        if table.find(acc, tostring(plr.Name)) then
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Loser Co-Owner In The Server\n\nName: "..tostring(v.Name) .." \nDisplay Name: "..tostring(v.DisplayName) .."\n";
+        Icon = ""; 
+        Duration = 15;
+    })
+        end
+    end)
+    
+
+else   
+    local acc = {"qwdqwdqwdqwdqasd","X0XTYTYTYTYTYTX0X","jackzanderYT","gottabigcarnamed"}
+
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if table.find(acc, tostring(v.Name)) then
+                            game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://10223592622"; 
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Rate 1 Owner In The Server                                                                              Name: "..tostring(v.Name);
+        Duration = 15;
+    })
+
+
+local args = {
+    [1] = "/w "..tostring(v.Name) .." Hi x0x, I'm using your script!";
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+print("Owner Check: You are not the owner")
+        end
+    end
+    
+    game:GetService("Players").PlayerAdded:Connect(function(plr)
+        if table.find(acc, tostring(plr.Name)) then
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: x0x Owner In The Server\n\nName: "..tostring(v.Name) .." \nDisplay Name: "..tostring(v.DisplayName) .."\n";
+        Icon = ""; 
+        Duration = 15;
+    })
+        end
+    end)
+    
+    	    local acc = {"xnzx_x","loser_man6","couragousbobman1","Or2Dev","ieatbaljeet","MYGRANDMAISNOTALIV3"}
+
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if table.find(acc, tostring(v.Name)) then
+                            game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://10223592622"; 
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Rate 1 Owner In The Server                                                                              Name: "..tostring(v.Name);
+        Duration = 15;
+    })
+
+local args = {
+    [1] = "/w "..tostring(v.Name) .." Hi Loser, I'm using your script!";
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+        end
+    end
+    
+    game:GetService("Players").PlayerAdded:Connect(function(plr)
+        if table.find(acc, tostring(plr.Name)) then
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Loser Co-Owner In The Server\n\nName: "..tostring(v.Name) .." \nDisplay Name: "..tostring(v.DisplayName) .."\n";
+        Icon = ""; 
+        Duration = 15;
+    })
+        end
+    end)
+    
+
+   end
+
+
