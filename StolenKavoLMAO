@@ -82,7 +82,7 @@ local themeStyles = {
         Header = Color3.fromRGB(36, 28, 41),
         TextColor = Color3.fromRGB(255,255,255),
         ElementColor = Color3.fromRGB(74, 58, 84),
-	img = 7705586722
+	img = "7705586722"
     },
     Ocean = {
         SchemeColor = Color3.fromRGB(86, 76, 251),
@@ -313,9 +313,7 @@ function Kavo.CreateLib(kavName, themeList)
     ImgBkg.ClipsDescendants = true
     ImgBkg.Position = UDim2.new(0.336503863, 0, 0.275485456, 0)
     ImgBkg.Size = UDim2.new(0, 525, 0, 318)
-    if themeList.img then
-    	ImgBkg.Image = "rbxassetid://" + themeList.img 
-    end
+    ImgBkg.Image = "rbxassetid://" + themeList.img 
 
     MainCorner.CornerRadius = UDim.new(0, 12)
     MainCorner.Name = "MainCorner"
