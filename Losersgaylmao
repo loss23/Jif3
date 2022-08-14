@@ -18,6 +18,7 @@ if game:GetService("MarketplaceService"):PlayerOwnsAsset(game.Players.LocalPlaye
     --Special
 spec:NewToggle("Auto Rebirth + Auto Builds", "Cool lmao", function(winner)
  game:GetService("ReplicatedStorage").RE.rebirth:FireServer()
+ wait(.1)
 
  
                 game.StarterGui:SetCore("SendNotification", {
