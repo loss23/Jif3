@@ -21,13 +21,6 @@
 --         \|___|                   \/____/                                       \/____/                                                   \/____/                  \/____/         
                                                                                                                                                                                    
 
--- DELETE THIS ⬇️
-_G.Settings = {
-    DiscordAutoJoin = true,
-    Theme = "R1"
-}
--- DELETE THIS ⬆️
-
 
 
 
