@@ -1,0 +1,526 @@
+--          _____                    _____                _____                    _____                           _______                   _____                    _____          
+--         /\    \                  /\    \              /\    \                  /\    \                         /::\    \                 /\    \                  /\    \         
+--        /::\    \                /::\    \            /::\    \                /::\    \                       /::::\    \               /::\____\                /::\    \        
+--       /::::\    \              /::::\    \           \:::\    \              /::::\    \                     /::::::\    \             /::::|   |               /::::\    \       
+--      /::::::\    \            /::::::\    \           \:::\    \            /::::::\    \                   /::::::::\    \           /:::::|   |              /::::::\    \      
+--     /:::/\:::\    \          /:::/\:::\    \           \:::\    \          /:::/\:::\    \                 /:::/~~\:::\    \         /::::::|   |             /:::/\:::\    \     
+--    /:::/__\:::\    \        /:::/__\:::\    \           \:::\    \        /:::/__\:::\    \               /:::/    \:::\    \       /:::/|::|   |            /:::/__\:::\    \    
+--   /::::\   \:::\    \      /::::\   \:::\    \          /::::\    \      /::::\   \:::\    \             /:::/    / \:::\    \     /:::/ |::|   |           /::::\   \:::\    \   
+--  /::::::\   \:::\    \    /::::::\   \:::\    \        /::::::\    \    /::::::\   \:::\    \           /:::/____/   \:::\____\   /:::/  |::|   | _____    /::::::\   \:::\    \  
+-- /:::/\:::\   \:::\____\  /:::/\:::\   \:::\    \      /:::/\:::\    \  /:::/\:::\   \:::\    \         |:::|    |     |:::|    | /:::/   |::|   |/\    \  /:::/\:::\   \:::\    \ 
+--/:::/  \:::\   \:::|    |/:::/  \:::\   \:::\____\    /:::/  \:::\____\/:::/__\:::\   \:::\____\        |:::|____|     |:::|    |/:: /    |::|   /::\____\/:::/__\:::\   \:::\____\
+--\::/   |::::\  /:::|____|\::/    \:::\  /:::/    /   /:::/    \::/    /\:::\   \:::\   \::/    /         \:::\    \   /:::/    / \::/    /|::|  /:::/    /\:::\   \:::\   \::/    /
+-- \/____|:::::\/:::/    /  \/____/ \:::\/:::/    /   /:::/    / \/____/  \:::\   \:::\   \/____/           \:::\    \ /:::/    /   \/____/ |::| /:::/    /  \:::\   \:::\   \/____/ 
+--       |:::::::::/    /            \::::::/    /   /:::/    /            \:::\   \:::\    \                \:::\    /:::/    /            |::|/:::/    /    \:::\   \:::\    \     
+--       |::|\::::/    /              \::::/    /   /:::/    /              \:::\   \:::\____\                \:::\__/:::/    /             |::::::/    /      \:::\   \:::\____\    
+--       |::| \::/____/               /:::/    /    \::/    /                \:::\   \::/    /                 \::::::::/    /              |:::::/    /        \:::\   \::/    /    
+--       |::|  ~|                    /:::/    /      \/____/                  \:::\   \/____/                   \::::::/    /               |::::/    /          \:::\   \/____/     
+--       |::|   |                   /:::/    /                                 \:::\    \                        \::::/    /                /:::/    /            \:::\    \         
+--       \::|   |                  /:::/    /                                   \:::\____\                        \::/____/                /:::/    /              \:::\____\        
+--        \:|   |                  \::/    /                                     \::/    /                         ~~                      \::/    /                \::/    /        
+--         \|___|                   \/____/                                       \/____/                                                   \/____/                  \/____/         
+                                                                                                                                                                                   
+
+
+
+
+ver2 =  _G.Settings.Theme -- Shows the theme
+
+
+
+
+
+ if true then
+        local function callback(Text)
+ if Text == "Okay!" then
+  print ("Answer")
+end
+end
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "▀▄『R』『1』▄▀";
+ Text = "You are using the showcase version";
+ Icon = "rbxassetid://10223592622";
+ Duration = 10;
+ Callback = NotificationBindable;
+})
+end
+
+   
+    if game.PlaceId == 6700823483 then
+        
+                local function callback(Text)
+ if Text == "Okay!" then
+  print ("Answer")
+end
+end
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "▀▄『R』『1』▄▀";
+ Text = "\nGame selected: Idiotic Investing (Showcaswe Version \nGameId: 6700823483";
+ Icon = "rbxassetid://10223592622";
+ Duration = 10;
+ Callback = NotificationBindable;
+})
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/loss23/Jif3/main/StolenKavoLMAO"))()
+local Window = Library.CreateLib("RateOne | SHOWCASE VERSION | Theme:  " ..ver2, _G.Settings.Theme)
+
+
+-- TOGGLES
+getgenv().Bidding1 = false
+getgenv().Bidding2 = false
+getgenv().Bidding3 = false
+getgenv().AutoLoan = false
+getgenv().AutoPlay = false
+getgenv().SpamScrew = false
+getgenv().LoopScrew = false
+getgenv().AutoReport = false
+getgenv().MuteAllSounds = false
+getgenv().MuteVoice = false
+getgenv().Autowin = false
+getgenv().LoopScrew = false
+
+
+
+--Tabs
+local DD = Window:NewTab("Self")
+local EN = Window:NewTab("Enemies")
+local HI = Window:NewTab("Hints")
+local CS = Window:NewTab("Credits/Settings")
+
+--SPECIAL
+if game:service('Players').LocalPlayer.UserId == 140716995 then
+	local SP = Window:NewTab("Special")	
+	local spec = SP:NewSection("Player")
+   
+    
+    --Special
+
+
+spec:NewToggle("Force Win ", "You win NO MATTER WHAT", function()
+       if getgenv().Autowin == false then
+        getgenv().Autowin = true
+    else
+        getgenv().Autowin = false
+    end
+    
+    while getgenv().Autowin == true do
+local args = {
+    [1] = "Bid",
+    [2] = "1"
+}
+game:GetService("ReplicatedStorage").SR:FireServer(unpack(args))
+
+local args = {
+    [1] = ""
+}
+
+game:GetService("ReplicatedStorage").Screw_Event:InvokeServer(unpack(args))
+ 
+end
+end)
+
+
+spec:NewTextBox("Screw user", "It takes a little", function(user)
+    user = string.lower(user)
+    for _, v in pairs(game.Players:GetPlayers()) do
+        if string.find(string.lower(v.Name), user) or string.find(string.lower(v.DisplayName), user)  then
+            targetted = tostring(v.Name)
+        end
+    end
+
+local args = {
+    [1] = ""..targetted;
+}
+
+game:GetService("ReplicatedStorage").Screw_Event:InvokeServer(unpack(args))
+
+                            game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://10223592622"; 
+        Title = "▀▄『R』『1』▄▀";
+        Text = ("Screwed: "..targetted);
+        Duration = 15;
+    })
+
+end)
+
+
+
+
+
+spec:NewTextBox("Super Screw sleceted user", "It takes a little", function(user)
+  Option = currentOption
+        user = string.lower(user)
+    for _, v in pairs(game.Players:GetPlayers()) do
+        if string.find(string.lower(v.Name), user) or string.find(string.lower(v.DisplayName), user)  then
+            targetted = tostring(v.Name)
+        end
+    end
+    
+       if getgenv().LoopScrew == false then
+        getgenv().LoopScrew = true
+    else
+        getgenv().LoopScrew = false
+    end
+    
+    while getgenv().LoopScrew == true do
+
+local args = {
+    [1] = ""..targetted
+}
+game:GetService("ReplicatedStorage").Screw_Event:InvokeServer(unpack(args))
+
+
+end
+end)
+
+spec:NewButton("Super screw selected user", "Ends loop screw", function()
+getgenv().LoopScrew = false
+                            game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://10223592622"; 
+        Title = "▀▄『R』『1』▄▀";
+        Text = ("Screwed"..currentOption);
+        Duration = 15;
+    })
+
+end)
+
+
+end -- End of Special
+
+
+
+--Sections
+local player = DD:NewSection("Player")
+local enemies = EN:NewSection("Enemies")
+local hints = HI:NewSection("Hints")
+local cre = CS:NewSection("Credit")
+local set = CS:NewSection("Settings")
+
+
+
+--Player
+
+player:NewButton("Redeem all codes", "You are an idiot", function()
+
+A_1 = "FanBoy" ------------------------------------------------------------REDEEM
+game:GetService("ReplicatedStorage").RedeemCode:InvokeServer(A_1)
+
+wait(0.5)
+A_1 = "GelPlays" ------------------------------------------------------------REDEEM
+game:GetService("ReplicatedStorage").RedeemCode:InvokeServer(A_1)
+
+wait(0.5)
+A_1 = "GiveMeMoneyPls" ------------------------------------------------------------REDEEM
+game:GetService("ReplicatedStorage").RedeemCode:InvokeServer(A_1)
+
+wait(0.5)
+A_1 = "Ayron" ------------------------------------------------------------REDEEM
+game:GetService("ReplicatedStorage").RedeemCode:InvokeServer(A_1)
+
+wait(0.5)
+A_1 = "1YEARWOO" ------------------------------------------------------------REDEEM
+game:GetService("ReplicatedStorage").RedeemCode:InvokeServer(A_1)
+
+                            game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://10223592622"; 
+        Title = "▀▄『R』『1』▄▀";
+        Text = "Redemed all code. If some of them didn't work then some of them got removed";
+        Duration = 15;
+    })
+
+end)
+
+
+player:NewToggle("Auto Play ", "Plays for you", function()
+
+       if getgenv().AutoPlay == false then
+        getgenv().AutoPlay = true
+    else
+        getgenv().AutoPlay = false
+    end
+    
+    while getgenv().AutoPlay == true do
+
+A_1 = "Bid"
+ A_2 = "1"
+game:GetService("ReplicatedStorage").SR:FireServer(A_1, A_2)
+ A_1 = "Loan"
+game:GetService("ReplicatedStorage").SR:FireServer(A_1)
+A_1 = "Done"
+game:GetService("ReplicatedStorage").SR:FireServer(A_1)
+A_1 = "Play"
+game:GetService("ReplicatedStorage").SR:FireServer(A_1)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/loss23/Jif3/main/AutoDraw"))()
+
+end
+end)
+
+player:NewToggle("Auto bid 1 ", "Bids for you", function()
+       if getgenv().Bidding1 == false then
+        getgenv().Bidding1 = true
+    else
+        getgenv().Bidding1 = false
+    end
+    
+    while getgenv().Bidding1 == true do
+local args = {
+    [1] = "Bid",
+    [2] = "1"
+}
+
+game:GetService("ReplicatedStorage").SR:FireServer(unpack(args))
+
+end
+end)
+
+player:NewToggle("Auto bid 2 ", "Bids for you", function()
+       if getgenv().Bidding2 == false then
+        getgenv().Bidding2 = true
+    else
+        getgenv().Bidding2 = false
+    end
+    
+    while getgenv().Bidding2 == true do
+local args = {
+    [1] = "Bid",
+    [2] = "2"
+}
+
+game:GetService("ReplicatedStorage").SR:FireServer(unpack(args))
+
+end
+end)
+
+player:NewToggle("Auto bid 3 ", "Bids for you", function()
+
+       if getgenv().Bidding3 == false then
+        getgenv().Bidding3 = true
+    else
+        getgenv().Bidding3 = false
+    end
+    
+    while getgenv().Bidding3 == true do
+local args = {
+    [1] = "Bid",
+    [2] = "3"
+}
+
+game:GetService("ReplicatedStorage").SR:FireServer(unpack(args))
+
+end
+end)
+
+player:NewToggle("Auto Loan ", "Loans for you", function()
+
+       if getgenv().AutoLoan == false then
+        getgenv().AutoLoan = true
+    else
+        getgenv().AutoLoan = false
+    end
+    
+    while getgenv().AutoLoan == true do
+ A_1 = "Loan"
+game:GetService("ReplicatedStorage").SR:FireServer(A_1)
+end
+end)
+
+
+-- Enemies
+enemies:NewToggle("Spam screw ", "Screw players", function()
+       if getgenv().SpamScrew == false then
+        getgenv().SpamScrew = true
+    else
+        getgenv().SpamScrew = false
+    end
+    
+    while getgenv().SpamScrew == true do
+  game:GetService("ReplicatedStorage")["Screw_Start"]:InvokeServer()
+end
+end)
+
+enemies:NewToggle("Spam Report ", "Spam reports players", function()
+       if getgenv().AutoReport == false then
+        getgenv().AutoReport = true
+    else
+        getgenv().AutoReport = false
+    end
+    
+    while getgenv().AutoReport == true do
+  game:GetService("ReplicatedStorage").Report:InvokeServer()
+end
+end)
+
+
+-- Hints
+hints:NewButton("Preset Prompt: x0x was here, F**k", "Use Before you start drawing <3", function()
+local args = {
+    [1] = "SetPromts",
+    [2] = {
+        [1] = "X0X Was here",
+        [2] = "F**k"
+    }
+}
+game:GetService("ReplicatedStorage").SR:FireServer(unpack(args))
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/loss23/Jif3/main/AutoDraw"))()
+end)
+
+hints:NewButton("Preset Prompt: Rate one is the best exploit,https://discord.gg/2HmBJR4kpm ", "Use Before you start drawing <3", function()
+local args = {
+    [1] = "SetPromts",
+    [2] = {
+        [1] = "Rate one is the best exploit",
+        [2] = "https://discord.gg/2HmBJR4kpm"
+    }
+}
+game:GetService("ReplicatedStorage").SR:FireServer(unpack(args))
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/loss23/Jif3/main/AutoDraw"))()
+end)
+
+hints:NewButton("Preset Prompt: Pneumonoultramicroscopicsilicovolcanoconiosis, Insert long word 2", "Use Before you start drawing <3", function()
+local args = {
+    [1] = "SetPromts",
+    [2] = {
+        [1] = "Pneumonoultramicroscopicsilicovolcanoconiosis",
+        [2] = "Insert long word 2"
+    }
+}
+game:GetService("ReplicatedStorage").SR:FireServer(unpack(args))
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/loss23/Jif3/main/AutoDraw"))()
+end)
+
+hints:NewLabel("NOTE: Some buttons were removed for the")
+hints:NewLabel("showcase because of racial slurs")
+
+--Credit/setting
+
+set:NewButton("Rtx", "Makes your game pretty pretty", function()
+
+getgenv().mode = "Summer" -- Choose from Summer and Autumn
+
+local a = game.Lighting
+a.Ambient = Color3.fromRGB(33, 33, 33)
+a.Brightness = 1.00
+a.ColorShift_Bottom = Color3.fromRGB(0, 0, 0)
+a.ColorShift_Top = Color3.fromRGB(255, 247, 237)
+a.EnvironmentDiffuseScale = 0.105
+a.EnvironmentSpecularScale = 0.522
+a.GlobalShadows = true
+a.OutdoorAmbient = Color3.fromRGB(51, 54, 67)
+a.ShadowSoftness = 0.04
+a.GeographicLatitude = -15.525
+a.ExposureCompensation = 0.55
+local b = Instance.new("BloomEffect", a)
+b.Enabled = true
+b.Intensity = 0.04
+b.Size = 1900
+b.Threshold = 0.915
+local c = Instance.new("ColorCorrectionEffect", a)
+c.Brightness = 0.110
+c.Contrast = 0.49
+c.Enabled = true
+c.Saturation = 0.2
+c.TintColor = Color3.fromRGB(217, 145, 57)
+if getgenv().mode == "Summer" then
+   c.TintColor = Color3.fromRGB(255, 220, 148)
+elseif getgenv().mode == "Autumn" then
+   c.TintColor = Color3.fromRGB(217, 145, 57)
+else
+   warn("No mode selected!")
+   print("Please select a mode")
+   b:Destroy()
+   c:Destroy()
+end
+local d = Instance.new("DepthOfFieldEffect", a)
+d.Enabled = true
+d.FarIntensity = 0.077
+d.FocusDistance = 21.54
+d.InFocusRadius = 20.77
+d.NearIntensity = 0.277
+local e = Instance.new("ColorCorrectionEffect", a)
+e.Brightness = 0
+e.Contrast = -0.07
+e.Saturation = 0
+e.Enabled = true
+e.TintColor = Color3.fromRGB(255, 247, 239)
+local e2 = Instance.new("ColorCorrectionEffect", a)
+e2.Brightness = 0.2
+e2.Contrast = 0.45
+e2.Saturation = -0.1
+e2.Enabled = true
+e2.TintColor = Color3.fromRGB(255, 255, 255)
+local s = Instance.new("SunRaysEffect", a)
+s.Enabled = true
+s.Intensity = 0.01
+s.Spread = 0.146
+
+end)
+
+
+set:NewTextBox("Test id numbers", "Tests the id to make sure it works (Because the game sucks at doing that)", function(Number)
+
+    local function callback(Text)
+ if Text == "Okay!" then
+  print ("Answer")
+end
+end
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+ Title = ("Id: "..Number);
+ Text = "";
+ Icon = ("rbxassetid://"..Number);
+ Duration = 10;
+ Callback = NotificataionBindable;
+})
+
+end)
+
+set:NewKeybind("Close/Open ui", "Fucking idiot", Enum.KeyCode.LeftControl, function()
+	Library:ToggleUI()
+end)
+-- Credit
+
+cre:NewButton("JOIN OUR DISCORD!", "Joins the rate one discord!", function()
+local json = {
+	["cmd"] = "INVITE_BROWSER",
+	["args"] = {
+		["code"] = "V6n4xYRHvf"
+	},
+	["nonce"] = 'a'
+}
+spawn(function()
+	print(syn.request({
+		Url = 'http://127.0.0.1:6463/rpc?v=1',
+		Method = 'POST',
+		Headers = {
+			['Content-Type'] = 'application/json',
+			['Origin'] = 'https://discord.com'
+		},
+		Body = game:GetService('HttpService'):JSONEncode(json),
+	}).Body)
+end)
+
+end)
+
+cre:NewButton("Copy x0x#4663 (Owner)", "Copies the owners discord tag", function()
+setclipboard("x0x#4663")
+end)
+
+cre:NewButton("Copy loser#5808 (Co-Owner)", "Copies the co-owners discord tag", function()
+setclipboard("loser#5808")
+end)
+
+end
+
+
+
+
