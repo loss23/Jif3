@@ -571,7 +571,7 @@ end)
 
 end -- End of Special
 
-if game:service('Players').LocalPlayer.UserId == 8798268679 or game:service('Players').LocalPlayer.UserId == 320887037  or game:service('Players').LocalPlayer.UserId == 166918284 or game:service('Players').LocalPlayer.UserId == 852743144 or game:service('Players').LocalPlayer.UserId == 1536552360 or game:service('Players').LocalPlayer.UserId == 331687485 or game:service('Players').LocalPlayer.UserId == 331687485 or game:service('Players').LocalPlayer.UserId == 2418180462 or game:service('Players').LocalPlayer.UserId == 2418180462 then -- Mission Impossible v2
+if game:service('Players').LocalPlayer.UserId == 8798268679 or game:service('Players').LocalPlayer.UserId == 1669182840 or game:service('Players').LocalPlayer.UserId == 320887037  or game:service('Players').LocalPlayer.UserId == 166918284 or game:service('Players').LocalPlayer.UserId == 852743144 or game:service('Players').LocalPlayer.UserId == 1536552360 or game:service('Players').LocalPlayer.UserId == 331687485 or game:service('Players').LocalPlayer.UserId == 331687485 or game:service('Players').LocalPlayer.UserId == 2418180462 or game:service('Players').LocalPlayer.UserId == 2418180462 then -- Mission Impossible v2
 	local SP2 = Window:NewTab("Mission Impossible v2")	
 	local spec3 = SP2:NewSection("CRASH THE SERVERR!")
 
