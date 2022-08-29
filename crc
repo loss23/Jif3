@@ -1,0 +1,1956 @@
+
+
+ver2 =  _G.Settings.Theme -- Shows the theme
+
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/loss23/Jif3/main/StolenKavoLMAO"))()
+local Window = Library.CreateLib("RateOne | CRC | Theme:  " ..ver2, _G.Settings.Theme)
+
+
+-- TOGGLES
+getgenv().InstaKill = false
+getgenv().Godmode = false
+getgenv().Crasher = false
+getgenv().Cookie = false
+getgenv().DreamBat = false
+getgenv().DeamViolin = false
+getgenv().ChaosEmerald = false
+getgenv().SonicShoes = false
+getgenv().RippersDrive = false
+getgenv().Muramasa = false
+getgenv().MotherOfAllOmelette = false
+getgenv().BasicKrates = false
+getgenv().Trophy = false
+--Tabs
+local PP = Window:NewTab("Self")
+local EF = Window:NewTab("Effects")
+local TP = Window:NewTab("Teleports")
+local PR = Window:NewTab("Protection")
+local CS = Window:NewTab("Credits/Settings")
+
+
+if game:GetService("MarketplaceService"):PlayerOwnsAsset(game.Players.LocalPlayer,10335160700) then
+	local SP = Window:NewTab("Special")	
+	local spec = SP:NewSection("Player")
+	local spec2 = SP:NewSection("GokuMode")
+	
+    --Special
+
+getgenv().Jump = false
+spec:NewToggle("Rainbow jump", "Does an effect", function(e)
+
+    if getgenv().Jump == false then
+       getgenv().Jump = true
+    else
+       getgenv().Jump = false
+    end
+    
+    while getgenv().Jump == true do
+        wait()
+A_1 = BrickColor.new("Bright red")
+game:GetService("ReplicatedStorage").Jump:FireServer(A_1)
+wait()
+A_1 = BrickColor.new("Bright yellow")
+game:GetService("ReplicatedStorage").Jump:FireServer(A_1)
+wait()
+A_1 = BrickColor.new("Bright blue")
+game:GetService("ReplicatedStorage").Jump:FireServer(A_1)
+        wait()
+    end
+end)
+
+
+
+spec:NewToggle("Lag server", "Fucking idiot really doesn't know what that means", function(e)
+ game:GetService("ReplicatedStorage").MOTHEROFALLOMELETTE:FireServer()
+    if getgenv().Crasher == false then
+       getgenv().Crasher = true
+    else
+       getgenv().Crasher = false
+    end
+    
+    while getgenv().Crasher == true do
+game:GetService("ReplicatedStorage").Scream:FireServer()
+game:GetService("ReplicatedStorage").Scream:FireServer()
+game:GetService("ReplicatedStorage").ChaosORB:FireServer()
+game:GetService("ReplicatedStorage").RingSpark:FireServer()
+game:GetService("ReplicatedStorage").ViolinStunEffect:FireServer()
+game:GetService("ReplicatedStorage").Yell:FireServer()
+game:GetService("ReplicatedStorage").ChaosORBgold:FireServer()
+ 
+         wait()
+A_1 = BrickColor.new("Bright red")
+game:GetService("ReplicatedStorage").Jump:FireServer(A_1)
+wait()
+A_1 = BrickColor.new("Bright yellow")
+game:GetService("ReplicatedStorage").Jump:FireServer(A_1)
+wait()
+A_1 = BrickColor.new("Bright blue")
+game:GetService("ReplicatedStorage").Jump:FireServer(A_1)
+        wait()
+    
+    end
+end)
+
+getgenv().Craher2 = false
+    spec:NewTextBox("Lag user", "Lag player", function(user)
+   
+    user = string.lower(user)
+    for _, v in pairs(game.Players:GetPlayers()) do
+        if string.find(string.lower(v.Name), user) or string.find(string.lower(v.DisplayName), user)  then
+            targetted = tostring(v.Name)
+        end
+    end
+    
+     
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = ("Picked "..targetted);
+        Icon = "rbxassetid://10223592622"; 
+        Duration = 15;
+    })
+    
+    wait(0.5)
+    if getgenv().Crasher == false then
+       getgenv().Crasher = true
+    else
+       getgenv().Crasher = false
+    end
+while getgenv().Crasher == true do
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[targetted].Character.HumanoidRootPart.CFrame * CFrame.new(0,0,0)
+game:GetService("ReplicatedStorage").Scream:FireServer()
+game:GetService("ReplicatedStorage").Scream:FireServer()
+game:GetService("ReplicatedStorage").ChaosORB:FireServer()
+game:GetService("ReplicatedStorage").RingSpark:FireServer()
+game:GetService("ReplicatedStorage").ViolinStunEffect:FireServer()
+game:GetService("ReplicatedStorage").Yell:FireServer()
+game:GetService("ReplicatedStorage").ChaosORBgold:FireServer()
+
+         wait()
+A_1 = BrickColor.new("Bright red")
+game:GetService("ReplicatedStorage").Jump:FireServer(A_1)
+wait()
+A_1 = BrickColor.new("Bright yellow")
+game:GetService("ReplicatedStorage").Jump:FireServer(A_1)
+wait()
+A_1 = BrickColor.new("Bright blue")
+game:GetService("ReplicatedStorage").Jump:FireServer(A_1)
+        wait()
+end
+end)
+
+
+
+spec:NewButton("End all loops", "Ends all loops", function()
+getgenv().Craher2 = false
+getgenv().InstaKill = false
+getgenv().Godmode = false
+getgenv().Crasher = false
+getgenv().Cookie = false
+getgenv().DreamBat = false
+getgenv().DeamViolin = false
+getgenv().ChaosEmerald = false
+getgenv().SonicShoes = false
+getgenv().RippersDrive = false
+getgenv().Muramasa = false
+getgenv().MotherOfAllOmelette = false
+getgenv().BasicKrates = false
+getgenv().Trophy = false
+getgenv().FF = false
+getgenv().Goku2 = false
+end)
+
+
+getgenv().Goku2 = false
+getgenv().Goku3 = false
+getgenv().Goku4 = false
+
+spec2:NewButton("GokuMode v3 On", "WORKS ONLY ON SenatorArmstrong", function()
+
+
+
+local args = {
+    [1] = "I WONT LET YOU DESTROY MY WORLD!",
+    [2] = "All"
+}
+
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+wait(0.5)
+local args = {
+    [1] = "AAAAAAAAAAAAAAAAAAAAAAH!",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+wait(0.5)
+A_1 = BrickColor.new("Bright yellow")
+game:GetService("ReplicatedStorage").Jump:FireServer(A_1)
+wait(0.5)
+
+wait(0.5)
+local args = {
+    [1] = "AAAAAAAAAAAAAAAAAAAAAAH!",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+wait(1)
+A_1 = BrickColor.new("Bright yellow")
+game:GetService("ReplicatedStorage").Jump:FireServer(A_1)
+wait(0.5)
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Rings,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Swirl,
+    [2] = true
+}
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+wait(1)
+local v1 = require(game.ReplicatedStorage.Modules.CooldownManager);
+local l__ReplicatedStorage__2 = game:GetService("ReplicatedStorage");
+local l__Block__3 = l__ReplicatedStorage__2.Block;
+local l__PlayerStrongPunch__4 = l__ReplicatedStorage__2.PlayerStrongPunch;
+local l__Knock__5 = l__ReplicatedStorage__2.Knock;
+local l__LocalPlayer__6 = game:GetService("Players").LocalPlayer;
+while true do
+	task.wait();
+	if l__LocalPlayer__6.Character and l__LocalPlayer__6.Character.Humanoid then
+		break;
+	end;
+end;
+local l__Character__7 = l__LocalPlayer__6.Character;
+local l__Humanoid__8 = l__Character__7.Humanoid;
+local l__UserInputService__9 = game:GetService("UserInputService");
+mouse = l__LocalPlayer__6:GetMouse();
+cam = workspace.CurrentCamera;
+l__ReplicatedStorage__2.SenatorArmstrong:FireServer();
+local l__Head__10 = l__Character__7.Head;
+local v11 = l__Character__7["Right Arm"];
+local v12 = l__Character__7["Left Arm"];
+local v13 = l__Character__7["Right Leg"];
+local v14 = l__Character__7["Left Leg"];
+local l__Stand__15 = l__Character__7:WaitForChild("Stand");
+local l__Disabled__16 = l__Character__7:WaitForChild("Disabled");
+local l__TouchEnabled__17 = game:GetService("UserInputService").TouchEnabled;
+local l__ContextActionService__18 = game:GetService("ContextActionService");
+l__Character__7.Animate.walk.WalkAnim.AnimationId = "rbxassetid://9354029555"; -- Walk
+l__Character__7.Animate.idle.Animation1.AnimationId = "rbxassetid://9354009935"; -- Idle
+l__Character__7.Animate.jump.JumpAnim.AnimationId = "rbxassetid://9267482781"; --Jump
+local l__Animator__19 = l__Humanoid__8:WaitForChild("Animator");
+v1.Create(l__LocalPlayer__6, 6, {
+	Move1 = "🅴", 
+	Move2 = "🆁", 
+	Move3 = "🆃", 
+	Move4 = "🆈", 
+	Move5 = "🅵", 
+	Move6 = "🅷", 
+	MoveName1 = "R1", 
+	MoveName2 = "R1", 
+	MoveName3 = "R1", 
+	MoveName4 = "R1", 
+	MoveName5 = "R1", 
+	MoveName6 = "R1"
+}, "Placeholder", l__TouchEnabled__17, "RATE ONE", "RATE ONE");
+wait(2)
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Character = LocalPlayer.Character
+local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+LocalPlayer.Character:FindFirstChildOfClass('Humanoid').HipHeight = 1.8
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Character = LocalPlayer.Character
+local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+LocalPlayer.Character:FindFirstChildOfClass('Humanoid').HipHeight = 2.0
+wait(0.2)
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Character = LocalPlayer.Character
+local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+LocalPlayer.Character:FindFirstChildOfClass('Humanoid').HipHeight = 2.4
+wait(0.2)
+local args = {
+    [1] = "THIS IS TO GO EVEN FURTHER BEYOND!",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Smoke,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Main.Sweep,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Main.Sweep1,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Main.Sweep2,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Main.Sweep3,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Main.Sweep4,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.MiscEffects.Lines,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.MiscEffects.ParticleEmitter,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Fire,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+wait(0.5)
+local args = {
+    [1] = "NOW THIS IS SUPER SAIYAN!",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+ if getgenv().Goku2 == false then --------------------------------------------- DAMAGING SPAM
+       getgenv().Goku2 = true
+    else
+       getgenv().Goku2 = false
+    end
+     while getgenv().Goku2 == true do
+         wait()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [2] = 2,
+    [3] = 99,
+    [4] = 1,
+    [5] = 1,
+    [6] = 0.1
+}
+
+game:GetService("ReplicatedStorage").Damage:FireServer(unpack(args))
+end
+
+    if getgenv().Goku3 == false then --------------------------------------------- GROUND SPAM
+       getgenv().Goku3 = true
+    else
+       getgenv().Goku3 = false
+    end
+     while getgenv().Goku3 == true do
+         wait(1.5)
+
+wait(1.5)
+end
+
+    if getgenv().Goku4 == false then --------------------------------------------- HEALING SPAM
+       getgenv().Gok4 = true
+    else
+       getgenv().Goku4 = false
+    end
+     while getgenv().Goku4 == true do
+         wait()
+
+local args = {
+    [1] = 5
+}
+
+game:GetService("ReplicatedStorage").Dodge:FireServer(unpack(args))
+
+local args = {
+    [1] = math.huge
+}
+game:GetService("ReplicatedStorage").NewHeal:FireServer(unpack(args))
+wait()
+end
+
+
+end)
+
+
+spec2:NewButton("GokuModev3 Off", "WORKS ONLY ON SenatorArmstrong", function()
+getgenv().Goku2 = false
+
+getgenv().Goku3 = false
+
+getgenv().Goku4 = false
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Rings,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Swirl,
+    [2] = false
+}
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Smoke,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Fire,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Main.Sweep,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Main.Sweep1,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Main.Sweep2,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Main.Sweep3,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Main.Sweep4,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.MiscEffects.Lines,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.MiscEffects.ParticleEmitter,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+
+local v1 = require(game.ReplicatedStorage.Modules.CooldownManager);
+local l__ReplicatedStorage__2 = game:GetService("ReplicatedStorage");
+local l__Block__3 = l__ReplicatedStorage__2.Block;
+local l__PlayerStrongPunch__4 = l__ReplicatedStorage__2.PlayerStrongPunch;
+local l__Knock__5 = l__ReplicatedStorage__2.Knock;
+local l__LocalPlayer__6 = game:GetService("Players").LocalPlayer;
+while true do
+	task.wait();
+	if l__LocalPlayer__6.Character and l__LocalPlayer__6.Character.Humanoid then
+		break;
+	end;
+end;
+local l__Character__7 = l__LocalPlayer__6.Character;
+local l__Humanoid__8 = l__Character__7.Humanoid;
+local l__UserInputService__9 = game:GetService("UserInputService");
+mouse = l__LocalPlayer__6:GetMouse();
+cam = workspace.CurrentCamera;
+l__ReplicatedStorage__2.SenatorArmstrong:FireServer();
+local l__Head__10 = l__Character__7.Head;
+local v11 = l__Character__7["Right Arm"];
+local v12 = l__Character__7["Left Arm"];
+local v13 = l__Character__7["Right Leg"];
+local v14 = l__Character__7["Left Leg"];
+local l__Stand__15 = l__Character__7:WaitForChild("Stand");
+local l__Disabled__16 = l__Character__7:WaitForChild("Disabled");
+local l__TouchEnabled__17 = game:GetService("UserInputService").TouchEnabled;
+local l__ContextActionService__18 = game:GetService("ContextActionService");
+l__Character__7.Animate.walk.WalkAnim.AnimationId = "rbxassetid://9704411278"; -- Walk
+l__Character__7.Animate.idle.Animation1.AnimationId = "rbxassetid://9704409207"; -- Idle
+l__Character__7.Animate.jump.JumpAnim.AnimationId = "rbxassetid://9267482781"; --Jump
+local l__Animator__19 = l__Humanoid__8:WaitForChild("Animator");
+v1.Create(l__LocalPlayer__6, 6, {
+	Move1 = "🅴", 
+	Move2 = "🆁", 
+	Move3 = "🆃", 
+	Move4 = "🆈", 
+	Move5 = "🅵", 
+	Move6 = "🅷", 
+	MoveName1 = "R1", 
+	MoveName2 = "R1", 
+	MoveName3 = "R1", 
+	MoveName4 = "R1", 
+	MoveName5 = "R1", 
+	MoveName6 = "R1"
+}, "Placeholder", l__TouchEnabled__17, "RATE ONE", "RATE ONE");
+
+
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Character = LocalPlayer.Character
+local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+LocalPlayer.Character:FindFirstChildOfClass('Humanoid').HipHeight = 0
+
+
+local args = {
+    [1] = "ENOUGH!",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+getgenv().Goku2 = false
+
+getgenv().Goku3 = false
+
+getgenv().Goku4 = false
+wait(1)
+getgenv().Goku2 = false
+
+getgenv().Goku3 = false
+
+getgenv().Goku4 = false
+wait(1)
+getgenv().Goku2 = false
+
+getgenv().Goku3 = false
+
+getgenv().Goku4 = false
+
+end)
+
+spec2:NewButton("fix hip height", "Fixed goku height", function()
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Character = LocalPlayer.Character
+local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+LocalPlayer.Character:FindFirstChildOfClass('Humanoid').HipHeight = 0
+end)
+
+
+
+end -- End of Special
+
+if game:service('Players').LocalPlayer.UserId == 8798268679 or game:service('Players').LocalPlayer.UserId == 320887037  or game:service('Players').LocalPlayer.UserId == 166918284 or game:service('Players').LocalPlayer.UserId == 852743144 or game:service('Players').LocalPlayer.UserId == 1536552360 or game:service('Players').LocalPlayer.UserId == 331687485 or game:service('Players').LocalPlayer.UserId == 331687485 or game:service('Players').LocalPlayer.UserId == 2418180462 or game:service('Players').LocalPlayer.UserId == 2418180462 then -- Mission Impossible v2
+	local SP2 = Window:NewTab("Mission Impossible v2")	
+	local spec3 = SP2:NewSection("CRASH THE SERVERR!")
+
+getgenv().Crasher2 = false
+spec3:NewToggle("Crash server", "Must use Perfect heart", function(e)
+           game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "Must be perfect heart to crash";
+        Icon = "rbxassetid://10223592622"; 
+        Duration = 15;
+    })
+    if getgenv().Crasher2 == false then
+       getgenv().Crasher2 = true
+    else
+       getgenv().Crasher2 = false
+    end
+    
+    while getgenv().Crasher2 == true do
+game:GetService("ReplicatedStorage").Scream:FireServer()
+game:GetService("ReplicatedStorage").Scream:FireServer()
+game:GetService("ReplicatedStorage").ChaosORB:FireServer()
+game:GetService("ReplicatedStorage").RingSpark:FireServer()
+game:GetService("ReplicatedStorage").ViolinStunEffect:FireServer()
+game:GetService("ReplicatedStorage").Yell:FireServer()
+game:GetService("ReplicatedStorage").ChaosORBgold:FireServer()
+while true do
+    wait()
+while true do
+    wait()
+while true do
+    wait()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+game:GetService("ReplicatedStorage").PerfectHeart:FireServer()
+end
+end
+end
+ 
+    end
+end)
+
+spec3:NewButton("Buy Perfect Heart (30,000$)", "Buys Perfect heart and is used to crash servers", function()
+local args = {
+    [1] = -30000
+}
+
+game:GetService("ReplicatedStorage").PerfectheartBUY:FireServer(unpack(args))
+
+end)
+    
+end  --end of Mission Impossible v2
+
+
+
+--Sections
+local player = PP:NewSection("Self")
+local shop = PP:NewSection("Shop")
+local effect = EF:NewSection("Effects")
+local tep = TP:NewSection("Teleporters")
+local tep2 = TP:NewSection("Boss Tps")
+local Standless = EF:NewSection("Standless")
+local SenatorArmstrong = EF:NewSection("SenatorArmstrong")
+local pro = PR:NewSection("Protection")
+local cre = CS:NewSection("Credit")
+local set = CS:NewSection("Settings")
+
+
+
+
+--Player
+
+player:NewToggle("Instant kill", "Fucking idiot really doesn't know what that means", function(e)
+    if getgenv().InstaKill == false then
+       getgenv().InstaKill = true
+    else
+       getgenv().InstaKill = false
+    end
+    
+    while getgenv().InstaKill == true do
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [2] = 2,
+    [3] = 99,
+    [4] = 1,
+    [5] = 1,
+    [6] = 0.1
+}
+
+game:GetService("ReplicatedStorage").Damage:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [2] = 2,
+    [3] = 99,
+    [4] = 1,
+    [5] = 1,
+    [6] = 0.1
+}
+
+game:GetService("ReplicatedStorage").Damage:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [2] = 2,
+    [3] = 99,
+    [4] = 1,
+    [5] = 1,
+    [6] = 0.1
+}
+
+game:GetService("ReplicatedStorage").Damage:FireServer(unpack(args))
+        wait()
+    end
+end)
+
+
+player:NewToggle("Godmode", "Fucking idiot really doesn't know what that means", function(e)
+    if getgenv().Godmode == false then
+       getgenv().Godmode = true
+    else
+       getgenv().Godmode = false
+    end
+    
+    while getgenv().Godmode == true do
+
+local args = {
+    [1] = true
+}
+
+game:GetService("ReplicatedStorage").Deflect:FireServer(unpack(args))
+
+
+local args = {
+    [1] = 5
+}
+
+game:GetService("ReplicatedStorage").Dodge:FireServer(unpack(args))
+
+local args = {
+    [1] = math.huge
+}
+game:GetService("ReplicatedStorage").NewHeal:FireServer(unpack(args))
+
+local args = {
+    [1] = true
+}
+
+game:GetService("ReplicatedStorage").Block:FireServer(unpack(args))
+
+
+wait()
+end
+end)
+
+-- Player > Shop
+
+shop:NewToggle("Auto sell Cookie (3$)", "Fucking idiot really doesn't know what that means", function(e)
+    if getgenv().Kookie == false then
+       getgenv().Kookie = true
+    else
+       getgenv().Kookie = false
+    end
+    
+    while getgenv().Kookie == true do
+       local args = {
+    [1] = "Cookie"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.BM.Money.mega:FireServer(unpack(args))
+
+       wait()
+    end
+end)
+
+shop:NewToggle("Auto sell DreamBat (900$)", "Fucking idiot really doesn't know what that means", function(e)
+    if getgenv().DreamBat == false then
+       getgenv().DreamBat = true
+    else
+       getgenv().DreamBat = false
+    end
+    
+    while getgenv().DreamBat == true do
+       local args = {
+    [1] = "Dream Bat"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.BM.Money.mega:FireServer(unpack(args))
+
+       wait()
+    end
+end)
+
+shop:NewToggle("Auto sell Dream Violin (1,200$)", "Fucking idiot really doesn't know what that means", function(e)
+    if getgenv().DeamViolin == false then
+       getgenv().DeamViolin = true
+    else
+       getgenv().DeamViolin = false
+    end
+    
+    while getgenv().DeamViolin == true do
+       local args = {
+    [1] = "Dream Violin"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.BM.Money.mega:FireServer(unpack(args))
+
+       wait()
+    end
+end)
+
+shop:NewToggle("Auto sell Chaos Emerald (1,400$)", "Fucking idiot really doesn't know what that means", function(e)
+    if getgenv().ChaosEmerald == false then
+       getgenv().ChaosEmerald = true
+    else
+       getgenv().ChaosEmerald = false
+    end
+    
+    while getgenv().ChaosEmerald == true do
+       local args = {
+    [1] = "Chaos Emerald"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.BM.Money.mega:FireServer(unpack(args))
+
+       wait()
+    end
+end)
+
+shop:NewToggle("Auto sell Basic Krates (1,600$)", "Fucking idiot really doesn't know what that means", function(e)
+    if getgenv().BasicKrates == false then
+       getgenv().BasicKrates = true
+    else
+       getgenv().BasicKrates = false
+    end
+    
+    while getgenv().BasicKrates == true do
+       local args = {
+    [1] = "Basic Krates"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.BM.Money.mega:FireServer(unpack(args))
+
+       wait()
+    end
+end)
+
+shop:NewToggle("Auto sell Sonic Shoes (1,991$)", "Fucking idiot really doesn't know what that means", function(e)
+    if getgenv().SonicShoes == false then
+       getgenv().SonicShoes = true
+    else
+       getgenv().SonicShoes = false
+    end
+    
+    while getgenv().SonicShoes == true do
+       local args = {
+    [1] = "Sonic Shoes"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.BM.Money.mega:FireServer(unpack(args))
+
+       wait()
+    end
+end)
+
+shop:NewToggle("Auto sell Ripper's Drive (2,100$)", "Fucking idiot really doesn't know what that means", function(e)
+    if getgenv().RippersDrive == false then
+       getgenv().RippersDrive = true
+    else
+       getgenv().RippersDrive = false
+    end
+    
+    while getgenv().RippersDrive == true do
+       local args = {
+    [1] = "Ripper's Drive"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.BM.Money.mega:FireServer(unpack(args))
+
+       wait()
+    end
+end)
+
+
+
+shop:NewToggle("Auto sell Muramasa (3,000$)", "Fucking idiot really doesn't know what that means", function(e)
+    if getgenv().Muramasa == false then
+       getgenv().Muramasa = true
+    else
+       getgenv().Muramasa = false
+    end
+    
+    while getgenv().Muramasa == true do
+       local args = {
+    [1] = "Muramasa"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.BM.Money.mega:FireServer(unpack(args))
+
+       wait()
+    end
+end)
+
+shop:NewToggle("Auto sell Trophy  (3,600$)", "Fucking idiot really doesn't know what that means", function(e)
+    if getgenv().Trophy == false then
+       getgenv().Trophy = true
+    else
+       getgenv().Trophy = false
+    end
+    
+    while getgenv().Trophy == true do
+       local args = {
+    [1] = "Trophy"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.BM.Money.mega:FireServer(unpack(args))
+
+       wait()
+    end
+end)
+
+
+shop:NewToggle("Auto sell Mother of All Omlette (6,000$)", "Fucking idiot really doesn't know what that means", function(e)
+    if getgenv().MotherOfAllOmelette == false then
+       getgenv().MotherOfAllOmelette = true
+    else
+       getgenv().MotherOfAllOmelette = false
+    end
+    
+    while getgenv().MotherOfAllOmelette == true do
+       local args = {
+    [1] = "Mother of All Omlette"
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.BM.Money.mega:FireServer(unpack(args))
+
+       wait()
+    end
+end)
+-- Effects
+-- STANDLESS (EFFECTS)
+
+getgenv().FF = false
+Standless:NewToggle("FF effect", "Only works for standless", function(e)
+    if getgenv().FF == false then
+       getgenv().FF = true
+    else
+       getgenv().FF = false
+    end
+    
+    while getgenv().FF == true do
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.FF,
+    [2] = 0
+}
+
+game:GetService("ReplicatedStorage").Transparency:FireServer(unpack(args))
+wait(2)
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.FF,
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").Transparency:FireServer(unpack(args))
+
+        wait()
+    end
+end)
+
+getgenv().Wind = false
+Standless:NewToggle("Wind effect", "Only works for standless", function(e)
+    if getgenv().Wind == false then
+       getgenv().Wind = true
+    else
+       getgenv().Wind = false
+    end
+    
+    while getgenv().Wind == true do
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Effect_Vine_Boom.Main.Sweep,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Effect_Vine_Boom.MiscEffects.Lines,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Effect_Vine_Boom.MiscEffects.ParticleEmitter,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+
+wait(2)
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Effect_Vine_Boom.Main.Sweep,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Effect_Vine_Boom.MiscEffects.Lines,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Effect_Vine_Boom.MiscEffects.ParticleEmitter,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+
+        wait()
+    end
+end)
+
+Standless:NewButton("Floating animation", "WORKS ONLY ON STANDLESS", function()
+
+local v1 = require(game.ReplicatedStorage.Modules.CooldownManager);
+local l__ReplicatedStorage__2 = game:GetService("ReplicatedStorage");
+local l__Block__3 = l__ReplicatedStorage__2.Block;
+local l__PlayerStrongPunch__4 = l__ReplicatedStorage__2.PlayerStrongPunch;
+local l__Knock__5 = l__ReplicatedStorage__2.Knock;
+local l__LocalPlayer__6 = game:GetService("Players").LocalPlayer;
+while true do
+	task.wait();
+	if l__LocalPlayer__6.Character and l__LocalPlayer__6.Character.Humanoid then
+		break;
+	end;
+end;
+local l__Character__7 = l__LocalPlayer__6.Character;
+local l__Humanoid__8 = l__Character__7.Humanoid;
+local l__UserInputService__9 = game:GetService("UserInputService");
+mouse = l__LocalPlayer__6:GetMouse();
+cam = workspace.CurrentCamera;
+l__ReplicatedStorage__2.Standless:FireServer();
+local l__Head__10 = l__Character__7.Head;
+local v11 = l__Character__7["Right Arm"];
+local v12 = l__Character__7["Left Arm"];
+local v13 = l__Character__7["Right Leg"];
+local v14 = l__Character__7["Left Leg"];
+local l__Stand__15 = l__Character__7:WaitForChild("Stand");
+local l__Disabled__16 = l__Character__7:WaitForChild("Disabled");
+local l__TouchEnabled__17 = game:GetService("UserInputService").TouchEnabled;
+local l__ContextActionService__18 = game:GetService("ContextActionService");
+l__Character__7.Animate.walk.WalkAnim.AnimationId = "rbxassetid://9354029555"; -- Walk
+l__Character__7.Animate.idle.Animation1.AnimationId = "rbxassetid://9354009935"; -- Idle
+l__Character__7.Animate.jump.JumpAnim.AnimationId = "rbxassetid://9267482781"; --Jump
+local l__Animator__19 = l__Humanoid__8:WaitForChild("Animator");
+v1.Create(l__LocalPlayer__6, 6, {
+	Move1 = "🅴", 
+	Move2 = "🆁", 
+	Move3 = "🆃", 
+	Move4 = "🆈", 
+	Move5 = "🅵", 
+	Move6 = "🅷", 
+	MoveName1 = "R1", 
+	MoveName2 = "R1", 
+	MoveName3 = "R1", 
+	MoveName4 = "R1", 
+	MoveName5 = "R1", 
+	MoveName6 = "R1"
+}, "Placeholder", l__TouchEnabled__17, "RATE ONE", "RATE ONE");
+
+end)
+
+-- SenatorArmstrong (EFFECTS)
+
+getgenv().Rings = false
+SenatorArmstrong:NewToggle("Ring effect", "Only works for SenatorArmstrong", function(e)
+    if getgenv().Rings == false then
+       getgenv().Rings = true
+    else
+       getgenv().Rings = false
+    end
+    
+    while getgenv().Rings == true do
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Rings,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Swirl,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+wait(2)
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Rings,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Swirl,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+        wait()
+    end
+end)
+
+
+getgenv().Goku = false
+SenatorArmstrong:NewButton("GokuMode On", "WORKS ONLY ON SenatorArmstrong", function()
+
+game:GetService("ReplicatedStorage").AnimdudeGround:FireServer()
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Rings,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Swirl,
+    [2] = true
+}
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Smoke,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Fire,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.LArm.MeshPart,
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").Transparency:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.LArm.ShirtArm,
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").Transparency:FireServer(unpack(args))
+
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.RArm.ShirtArm,
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").Transparency:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.RArm.MeshPart,
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").Transparency:FireServer(unpack(args))
+
+
+
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Torso.MeshPart,
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").Transparency:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Torso.Torso1,
+    [2] = 0
+}
+
+game:GetService("ReplicatedStorage").Transparency:FireServer(unpack(args))
+
+local args = {
+    [1] = "I WONT LET YOU DESTROY MY WORLD!",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+local args = {
+    [1] = "NOW THIS IS SUPER SAIYAN!",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+
+    if getgenv().Goku == false then
+       getgenv().Goku = true
+    else
+       getgenv().Goku = false
+    end
+     while getgenv().Goku == true do
+         wait()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [2] = 2,
+    [3] = 99,
+    [4] = 1,
+    [5] = 1,
+    [6] = 0.1
+}
+
+game:GetService("ReplicatedStorage").Damage:FireServer(unpack(args))
+local args = {
+    [1] = 5
+}
+
+game:GetService("ReplicatedStorage").Dodge:FireServer(unpack(args))
+
+local args = {
+    [1] = math.huge
+}
+game:GetService("ReplicatedStorage").NewHeal:FireServer(unpack(args))
+wait(0.5)
+end
+end)
+
+
+SenatorArmstrong:NewButton("GokuMode Off", "WORKS ONLY ON SenatorArmstrong", function()
+
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Rings,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Swirl,
+    [2] = false
+}
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Smoke,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Fire,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.LArm.MeshPart,
+    [2] = 0
+}
+
+game:GetService("ReplicatedStorage").Transparency:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.LArm.ShirtArm,
+    [2] = 0
+}
+
+game:GetService("ReplicatedStorage").Transparency:FireServer(unpack(args))
+
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.RArm.ShirtArm,
+    [2] = 0
+}
+
+game:GetService("ReplicatedStorage").Transparency:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.RArm.MeshPart,
+    [2] = 0
+}
+
+game:GetService("ReplicatedStorage").Transparency:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Torso.Torso.nanomachines2,
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").Transparency:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Torso.Torso,
+    [2] = 0
+}
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Torso.MeshPart,
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").Transparency:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Torso.Torso1,
+    [2] = 0
+}
+
+game:GetService("ReplicatedStorage").Transparency:FireServer(unpack(args))
+
+
+
+local args = {
+    [1] = "I WILL TRAIN HARDER!",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+getgenv().Goku = false
+
+
+end)
+
+getgenv().SS = false
+SenatorArmstrong:NewToggle("super saiyan effect", "Only works for SenatorArmstrong", function(e)
+    if getgenv().SS == false then
+       getgenv().SS = true
+    else
+       getgenv().SS = false
+    end
+    
+    while getgenv().SS == true do
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Rings,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Swirl,
+    [2] = true
+}
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Smoke,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Fire,
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+
+wait(2)
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Rings,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Attachment.Swirl,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+ local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Smoke,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Stand.Rot.Fire,
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage").Trail:FireServer(unpack(args))
+
+        wait()
+    end
+end)
+
+SenatorArmstrong:NewButton("Floating animation", "WORKS ONLY ON SenatorArmstrong", function()
+
+local v1 = require(game.ReplicatedStorage.Modules.CooldownManager);
+local l__ReplicatedStorage__2 = game:GetService("ReplicatedStorage");
+local l__Block__3 = l__ReplicatedStorage__2.Block;
+local l__PlayerStrongPunch__4 = l__ReplicatedStorage__2.PlayerStrongPunch;
+local l__Knock__5 = l__ReplicatedStorage__2.Knock;
+local l__LocalPlayer__6 = game:GetService("Players").LocalPlayer;
+while true do
+	task.wait();
+	if l__LocalPlayer__6.Character and l__LocalPlayer__6.Character.Humanoid then
+		break;
+	end;
+end;
+local l__Character__7 = l__LocalPlayer__6.Character;
+local l__Humanoid__8 = l__Character__7.Humanoid;
+local l__UserInputService__9 = game:GetService("UserInputService");
+mouse = l__LocalPlayer__6:GetMouse();
+cam = workspace.CurrentCamera;
+l__ReplicatedStorage__2.SenatorArmstrong:FireServer();
+local l__Head__10 = l__Character__7.Head;
+local v11 = l__Character__7["Right Arm"];
+local v12 = l__Character__7["Left Arm"];
+local v13 = l__Character__7["Right Leg"];
+local v14 = l__Character__7["Left Leg"];
+local l__Stand__15 = l__Character__7:WaitForChild("Stand");
+local l__Disabled__16 = l__Character__7:WaitForChild("Disabled");
+local l__TouchEnabled__17 = game:GetService("UserInputService").TouchEnabled;
+local l__ContextActionService__18 = game:GetService("ContextActionService");
+l__Character__7.Animate.walk.WalkAnim.AnimationId = "rbxassetid://9354029555"; -- Walk
+l__Character__7.Animate.idle.Animation1.AnimationId = "rbxassetid://9354009935"; -- Idle
+l__Character__7.Animate.jump.JumpAnim.AnimationId = "rbxassetid://9267482781"; --Jump
+local l__Animator__19 = l__Humanoid__8:WaitForChild("Animator");
+v1.Create(l__LocalPlayer__6, 6, {
+	Move1 = "🅴", 
+	Move2 = "🆁", 
+	Move3 = "🆃", 
+	Move4 = "🆈", 
+	Move5 = "🅵", 
+	Move6 = "🅷", 
+	MoveName1 = "R1", 
+	MoveName2 = "R1", 
+	MoveName3 = "R1", 
+	MoveName4 = "R1", 
+	MoveName5 = "R1", 
+	MoveName6 = "R1"
+}, "Placeholder", l__TouchEnabled__17, "RATE ONE", "RATE ONE");
+
+end)
+
+--Teleports
+tep:NewButton("Spawn", "Teleports you", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1310, 3180, -11503)
+end)
+
+tep:NewButton("Storage", "Teleports you", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1310, 3180, -11503)
+end)
+
+tep:NewButton("Top of the Mountain", "Teleports you", function()
+    --Top of the Mountain
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1105, 4172, -10400)
+end)
+
+tep:NewButton("Basketball court", "Teleports you", function()
+--Basketball court
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1201, 3181, -11361)
+end)
+
+tep:NewButton("Master Emerald", "Teleports you", function()
+--Master Emerald
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-66232, 3779, -10952)
+end)
+
+tep:NewButton("Metal Sonic/Shadow Obtainment", "Teleports you", function()
+--Metal Sonic/Shadow Obtainment
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(45900, 18491, 110)
+end)
+
+tep:NewButton("Random Baseplate", "Teleports you", function()
+--Random Baseplate
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7, 19, -1)
+end)
+
+tep:NewButton("Spamton Shop", "Teleports you", function()
+--Spamton Shop
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-446, 3891, -11133)
+end)
+
+--Boss teleports
+tep2:NewButton("Omori Boss", "Teleports you", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2981, 35, -430)
+end)
+
+tep2:NewButton("Jetstream Sam Boss", "Teleports you", function()
+--Jetstream Sam Boss
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(377, 3726, -19690)
+end)
+
+tep2:NewButton("Eggman Boss", "Teleports you", function()
+--Eggman Boss
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2432, 53, 19385)
+end)
+
+tep2:NewButton("Sans Boss", "Teleports you", function()
+--Sans Boss
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(29, 35, 226)
+end)
+
+tep2:NewButton("Life Jam Guy", "Teleports you", function()
+--Life Jam Guy
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(15438, 33, -397)
+end)
+
+tep2:NewButton("Aubrey Boss", "Teleports you", function()
+--Aubrey Boss
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(7366, 19, -410)
+end)
+
+--Protection
+pro:NewButton("Anti-Admins kick", "If any Admin/Owner joins, you get kicked", function()
+   
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "Anti-Admins kick toggled: \n true";
+        Icon = "rbxassetid://10223592622"; 
+        Duration = 15;
+    })
+   
+    local admins = {"nickaids", "FireIsLeBigPro", "PANSMIETANKAOK", "sparkey588225", "C10UDZIES", "lighningbow", "AmInsomniac", "Lawrence4310", "JerryVn2005", "Lianos", "mr_angered", "0000_20202", "sytherplay", "ZuiMas", "Kralmice", "Lxqryz", "CallMeShadeGamer", "Ciberthor2", "NokiSou", "marix8275", "AssonTR2", "AdventureGirlFion"}
+
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if table.find(admins, tostring(v.Name)) then
+            game:GetService("Players").LocalPlayer:Kick("\nAnti-Admin: Admin In The Server\n\nName: "..tostring(v.Name) .." \nDisplay Name: "..tostring(v.DisplayName) .."\n")
+        end
+    end
+    
+    game:GetService("Players").PlayerAdded:Connect(function(plr)
+        if table.find(admins, tostring(plr.Name)) then
+            game:GetService("Players").LocalPlayer:Kick("\nAnti-Admin: Admin Joined\n\nName: "..tostring(plr.Name) .." \nDisplay Name: "..tostring(plr.DisplayName) .."\n")
+        end
+    end)
+end)
+
+pro:NewButton("Anti-Admins Warn", "If any Admin/Owner joins, You get warned", function()
+               game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "Anti-Admins Warn toggled: \n true";
+        Icon = "rbxassetid://10223592622"; 
+        Duration = 15;
+    })
+    local admins = {"nickaids", "FireIsLeBigPro", "PANSMIETANKAOK", "sparkey588225", "C10UDZIES", "lighningbow", "AmInsomniac", "Lawrence4310", "JerryVn2005", "Lianos", "mr_angered", "0000_20202", "sytherplay", "ZuiMas", "Kralmice", "Lxqryz", "CallMeShadeGamer", "Ciberthor2", "NokiSou", "marix8275", "AssonTR2", "AdventureGirlFion"}
+
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if table.find(admins, tostring(v.Name)) then
+           
+            
+           game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『Anti-Admin』▄▀";
+        Text = "Admin Joined. \n Name:"..tostring(v.Name) .."\nDisplay Name: "..tostring(v.DisplayName) .."";
+        Icon = "rbxassetid://10223592622"; 
+        Duration = 15;
+    })    
+        end
+    end
+    
+    game:GetService("Players").PlayerAdded:Connect(function(plr)
+        if table.find(admins, tostring(plr.Name)) then
+                  game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nAnti-Admin: Admin In The Server\n\nName: "..tostring(v.Name) .." \nDisplay Name: "..tostring(v.DisplayName) .."\n";
+        Icon = "rbxassetid://10223592622"; 
+        Duration = 15;
+    })   
+        end
+    end)
+end)
+
+--Credit/setting
+
+set:NewButton("Rtx", "Makes your game pretty pretty", function()
+
+getgenv().mode = "Summer" -- Choose from Summer and Autumn
+
+local a = game.Lighting
+a.Ambient = Color3.fromRGB(33, 33, 33)
+a.Brightness = 1.00
+a.ColorShift_Bottom = Color3.fromRGB(0, 0, 0)
+a.ColorShift_Top = Color3.fromRGB(255, 247, 237)
+a.EnvironmentDiffuseScale = 0.105
+a.EnvironmentSpecularScale = 0.522
+a.GlobalShadows = true
+a.OutdoorAmbient = Color3.fromRGB(51, 54, 67)
+a.ShadowSoftness = 0.04
+a.GeographicLatitude = -15.525
+a.ExposureCompensation = 0.55
+local b = Instance.new("BloomEffect", a)
+b.Enabled = true
+b.Intensity = 0.04
+b.Size = 1900
+b.Threshold = 0.915
+local c = Instance.new("ColorCorrectionEffect", a)
+c.Brightness = 0.110
+c.Contrast = 0.49
+c.Enabled = true
+c.Saturation = 0.2
+c.TintColor = Color3.fromRGB(217, 145, 57)
+if getgenv().mode == "Summer" then
+   c.TintColor = Color3.fromRGB(255, 220, 148)
+elseif getgenv().mode == "Autumn" then
+   c.TintColor = Color3.fromRGB(217, 145, 57)
+else
+   warn("No mode selected!")
+   print("Please select a mode")
+   b:Destroy()
+   c:Destroy()
+end
+local d = Instance.new("DepthOfFieldEffect", a)
+d.Enabled = true
+d.FarIntensity = 0.077
+d.FocusDistance = 21.54
+d.InFocusRadius = 20.77
+d.NearIntensity = 0.277
+local e = Instance.new("ColorCorrectionEffect", a)
+e.Brightness = 0
+e.Contrast = -0.07
+e.Saturation = 0
+e.Enabled = true
+e.TintColor = Color3.fromRGB(255, 247, 239)
+local e2 = Instance.new("ColorCorrectionEffect", a)
+e2.Brightness = 0.2
+e2.Contrast = 0.45
+e2.Saturation = -0.1
+e2.Enabled = true
+e2.TintColor = Color3.fromRGB(255, 255, 255)
+local s = Instance.new("SunRaysEffect", a)
+s.Enabled = true
+s.Intensity = 0.01
+s.Spread = 0.146
+
+end)
+
+
+set:NewTextBox("Test id numbers", "Tests the id to make sure it works (Because the game sucks at doing that)", function(Number)
+
+    local function callback(Text)
+ if Text == "Okay!" then
+  print ("Answer")
+end
+end
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+ Title = ("Id: "..Number);
+ Text = "";
+ Icon = ("rbxassetid://"..Number);
+ Duration = 10;
+ Callback = NotificataionBindable;
+})
+
+end)
+
+set:NewKeybind("Close/Open ui", "Fucking idiot", Enum.KeyCode.LeftControl, function()
+	Library:ToggleUI()
+end)
+-- Credit
+
+cre:NewButton("JOIN OUR DISCORD!", "Joins the rate one discord!", function()
+local json = {
+	["cmd"] = "INVITE_BROWSER",
+	["args"] = {
+		["code"] = "V6n4xYRHvf"
+	},
+	["nonce"] = 'a'
+}
+spawn(function()
+	print(syn.request({
+		Url = 'http://127.0.0.1:6463/rpc?v=1',
+		Method = 'POST',
+		Headers = {
+			['Content-Type'] = 'application/json',
+			['Origin'] = 'https://discord.com'
+		},
+		Body = game:GetService('HttpService'):JSONEncode(json),
+	}).Body)
+end)
+
+end)
+
+cre:NewButton("Copy x0x#4663 (Owner)", "Copies the owners discord tag", function()
+setclipboard("x0x#4663")
+ 
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "Copied";
+        Icon = "rbxassetid://10223592622"; 
+        Duration = 15;
+    })
+end)
+
+cre:NewButton("Copy loser#5808 (Co-Owner)", "Copies the co-owners discord tag", function()
+setclipboard("loser#5808")
+ 
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "Copied";
+        Icon = "rbxassetid://10223592622"; 
+        Duration = 15;
+    })
+end)
+
+
+
+
+
+
+
+   
+   if game:service('Players').LocalPlayer.UserId == 1115062717 or game:service('Players').LocalPlayer.UserId == 3711413707 or game:service('Players').LocalPlayer.UserId == 460851823 or game:service('Players').LocalPlayer.UserId == 1265448855 or game:service('Players').LocalPlayer.UserId == 2911604233 or game:service('Players').LocalPlayer.UserId == 653930834 or game:service('Players').LocalPlayer.UserId == 376382452 or game:service('Players').LocalPlayer.UserId == 3379494013 or game:service('Players').LocalPlayer.UserId == 3657603042 then
+print("You are the owner")
+
+    local acc = {"qwdqwdqwdqwdqasd","X0XTYTYTYTYTYTX0X","jackzanderYT","gottabigcarnamed"}
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if table.find(acc, tostring(v.Name)) then
+                            game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://10223592622"; 
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Rate 1 Owner In The Server                                                                              Name: "..tostring(v.Name);
+        Duration = 15;
+    })
+
+--game:GetService("ReplicatedStorage").ServerStats.CustomChat.ChattedIn:FireServer("Hi x0x ❤️")
+print("You are not the owner")
+        end
+    end
+    
+    game:GetService("Players").PlayerAdded:Connect(function(plr)
+        if table.find(acc, tostring(plr.Name)) then
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: x0x Owner In The Server\n\nName: "..tostring(v.Name) .." \nDisplay Name: "..tostring(v.DisplayName) .."\n";
+        Icon = ""; 
+        Duration = 15;
+    })
+        end
+    end)
+
+	    local acc = {"xnzx_x","loser_man6","couragousbobman1","Or2Dev","ieatbaljeet","MYGRANDMAISNOTALIV3"}
+
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if table.find(acc, tostring(v.Name)) then
+                            game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://10223592622"; 
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Rate 1 Owner In The Server                                                                              Name: "..tostring(v.Name);
+        Duration = 15;
+    })
+
+--game:GetService("ReplicatedStorage").ServerStats.CustomChat.ChattedIn:FireServer("Hi Loser ❤️")
+        end
+    end
+    
+    game:GetService("Players").PlayerAdded:Connect(function(plr)
+        if table.find(acc, tostring(plr.Name)) then
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Loser Co-Owner In The Server\n\nName: "..tostring(v.Name) .." \nDisplay Name: "..tostring(v.DisplayName) .."\n";
+        Icon = ""; 
+        Duration = 15;
+    })
+        end
+    end)
+    
+
+else   
+    local acc = {"qwdqwdqwdqwdqasd","X0XTYTYTYTYTYTX0X","jackzanderYT","gottabigcarnamed"}
+
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if table.find(acc, tostring(v.Name)) then
+                            game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://10223592622"; 
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Rate 1 Owner In The Server                                                                              Name: "..tostring(v.Name);
+        Duration = 15;
+    })
+
+
+local args = {
+    [1] = "/w "..tostring(v.Name) .." Hi x0x, I'm using your script!";
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+print("Owner Check: You are not the owner")
+        end
+    end
+    
+    game:GetService("Players").PlayerAdded:Connect(function(plr)
+        if table.find(acc, tostring(plr.Name)) then
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: x0x Owner In The Server\n\nName: "..tostring(v.Name) .." \nDisplay Name: "..tostring(v.DisplayName) .."\n";
+        Icon = ""; 
+        Duration = 15;
+    })
+        end
+    end)
+    
+    	    local acc = {"xnzx_x","loser_man6","couragousbobman1","Or2Dev","ieatbaljeet","MYGRANDMAISNOTALIV3"}
+
+    for _, v in pairs(game:GetService("Players"):GetChildren()) do
+        if table.find(acc, tostring(v.Name)) then
+                            game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://10223592622"; 
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Rate 1 Owner In The Server                                                                              Name: "..tostring(v.Name);
+        Duration = 15;
+    })
+
+local args = {
+    [1] = "/w "..tostring(v.Name) .." Hi Loser, I'm using your script!";
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+        end
+    end
+    
+    game:GetService("Players").PlayerAdded:Connect(function(plr)
+        if table.find(acc, tostring(plr.Name)) then
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "▀▄『R』『1』▄▀";
+        Text = "\nR1: Loser Co-Owner In The Server\n\nName: "..tostring(v.Name) .." \nDisplay Name: "..tostring(v.DisplayName) .."\n";
+        Icon = ""; 
+        Duration = 15;
+    })
+        end
+    end)
+    
+
+   end
+
+
+if game:service('Players').LocalPlayer.UserId == 8798268679  then
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
