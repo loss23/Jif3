@@ -24,7 +24,7 @@ return(function(tC,EC,qC,MC,DC,JC,AC,nC,zC,IC,HC,RC,aC,eC,rC,kC,mC,hC,sC,BC,GC,N
 
   OrionLib:MakeNotification({
 	Name = "▀▄『R』『1』▄▀",
-	Content = "Theme picked " ..ICON,
+	Content = "v1 Theme picked " ..ICON,
 	Image = "rbxassetid://10223592622",
 	Time = 5
 })
